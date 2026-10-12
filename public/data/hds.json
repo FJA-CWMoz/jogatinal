@@ -1,0 +1,46 @@
+[
+  {
+    "id": "hd_500gb",
+    "nome": "HD Externo 500GB",
+    "marca": "Seagate / Toshiba",
+    "capacidadeGB": 500,
+    "preco": 1800,
+    "tipo": "HDD 2.5 USB 3.0",
+    "estado": "Novo com Garantia",
+    "recomendado": false,
+    "descricao": "Ideal para quem quer entre 8 a 12 jogos essenciais na PS4 ou dezenas de clássicos na PS3/PS2."
+  },
+  {
+    "id": "hd_1tb",
+    "nome": "HD Externo 1TB (1000GB)",
+    "marca": "Western Digital / Seagate",
+    "capacidadeGB": 1000,
+    "preco": 2500,
+    "tipo": "HDD 2.5 USB 3.0",
+    "estado": "Novo com Garantia",
+    "recomendado": true,
+    "descricao": "A escolha mais popular em Matola: cabe todos os teus jogos de futebol, campanhas longas e sobra espaço."
+  },
+  {
+    "id": "hd_2tb",
+    "nome": "HD Externo 2TB (2000GB)",
+    "marca": "Toshiba Canvio Basics",
+    "capacidadeGB": 2000,
+    "preco": 4200,
+    "tipo": "HDD 2.5 USB 3.0",
+    "estado": "Novo com Garantia",
+    "recomendado": false,
+    "descricao": "Capacidade massiva para colecionadores: até 40+ jogos pesados de PS4/PS5 sem preocupações."
+  },
+  {
+    "id": "ssd_1tb",
+    "nome": "SSD Portátil Ultra-Rápido 1TB",
+    "marca": "Kingston / SanDisk",
+    "capacidadeGB": 1000,
+    "preco": 6500,
+    "tipo": "SSD USB-C 3.2 Gen 2",
+    "estado": "Alta Performance (520 MB/s)",
+    "recomendado": false,
+    "descricao": "Velocidades extremas de carregamento, silencioso e resistente a quedas, ideal para PS4 Pro e PS5."
+  }
+]

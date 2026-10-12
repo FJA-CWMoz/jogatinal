@@ -1,0 +1,83 @@
+/* ==========================================================================
+   JOGATINAL - variables.css
+   Design tokens gamer oficiais — Identidade visual PlayStation / Esports / Arena
+   Matola Muhalaze / Ngolhoza, Moçambique
+   ========================================================================== */
+
+:root {
+  /* Paleta cromática gamer (Obsidian Carbon + Cyber Neon Green + PlayStation Blue + Dourado Troféu) */
+  --cor-fundo-principal: #0a0c12;
+  --cor-fundo-secundario: #10141f;
+  --cor-superficie: #161c2b;
+  --cor-superficie-elevada: #1f273b;
+  --cor-borda: #252f47;
+  --cor-borda-suave: #344263;
+
+  /* Tipografia cromática gamer */
+  --cor-texto-principal: #f4f6fa;
+  --cor-texto-suave: #9da8be;
+  --cor-texto-muted: #677593;
+
+  /* Cores de Ação e Destaque Gamer */
+  --cor-verde-marca: #00e575;
+  --cor-verde-hover: #1eff8b;
+  --cor-verde-fundo: rgba(0, 229, 117, 0.12);
+  --cor-dourado: #ffb800;
+  --cor-dourado-fundo: rgba(255, 184, 0, 0.14);
+  --cor-azul-ps: #0070d1;
+  --cor-azul-hover: #1a88eb;
+  --cor-azul-fundo: rgba(0, 112, 209, 0.14);
+  --cor-cyan-neon: #00d2ff;
+  --cor-cyan-fundo: rgba(0, 210, 255, 0.12);
+  --cor-vermelho-erro: #ff334b;
+  --cor-vermelho-fundo: rgba(255, 51, 75, 0.12);
+
+  /* Famílias Tipográficas */
+  --fonte-titulos: "Anton", "Rajdhani", sans-serif;
+  --fonte-subtitulos: "Archivo", sans-serif;
+  --fonte-gamer: "Rajdhani", sans-serif;
+  --fonte-corpo: "Inter", sans-serif;
+  --fonte-numeros: "Bebas Neue", sans-serif;
+
+  /* Escala Tipográfica Fluida */
+  --tipo-display: clamp(2.35rem, 5vw + 1rem, 4.25rem);
+  --tipo-h1: clamp(1.95rem, 3.8vw + 0.8rem, 3.15rem);
+  --tipo-h2: clamp(1.45rem, 2.5vw + 0.6rem, 2.2rem);
+  --tipo-h3: clamp(1.15rem, 1.5vw + 0.5rem, 1.5rem);
+  --tipo-corpo: clamp(0.9375rem, 0.25vw + 0.875rem, 1.0625rem);
+  --tipo-pequeno: 0.8438rem;
+  --tipo-micro: 0.75rem;
+
+  /* Espaçamentos */
+  --espaco-xs: 0.25rem;  /* 4px */
+  --espaco-sm: 0.5rem;   /* 8px */
+  --espaco-md: 1rem;     /* 16px */
+  --espaco-lg: 1.5rem;   /* 24px */
+  --espaco-xl: 2rem;     /* 32px */
+  --espaco-2xl: 3rem;    /* 48px */
+  --espaco-3xl: 4.5rem;  /* 72px */
+
+  /* Raios de Curvatura */
+  --raio-sm: 6px;
+  --raio-md: 10px;
+  --raio-lg: 14px;
+  --raio-xl: 20px;
+  --raio-full: 9999px;
+
+  /* Sombras e Iluminação Neon Gamer */
+  --sombra-card: 0 8px 24px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --sombra-elevada: 0 16px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 229, 117, 0.12);
+  --sombra-suave: 0 2px 10px rgba(0, 0, 0, 0.4);
+  --sombra-glow-verde: 0 0 24px rgba(0, 229, 117, 0.35);
+  --sombra-glow-azul: 0 0 24px rgba(0, 112, 209, 0.4);
+  --sombra-glow-dourado: 0 0 24px rgba(255, 184, 0, 0.4);
+
+  /* Transições suaves */
+  --transicao-rapida: 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transicao-normal: 240ms cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Dimensões de Layout */
+  --largura-maxima: 1240px;
+  --altura-header: 68px;
+  --alvo-toque-minimo: 44px;
+}

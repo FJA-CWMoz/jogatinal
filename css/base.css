@@ -1,0 +1,186 @@
+/* ==========================================================================
+   JOGATINAL - base.css
+   Estilos base globais, tipografia desportiva e texturas orgânicas
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600;700;900&family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+body {
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-principal);
+  font-family: var(--fonte-corpo);
+  font-size: var(--tipo-corpo);
+  line-height: 1.6;
+  min-height: 100vh;
+  position: relative;
+  /* Textura Gamer: Mesh cyber dark + Iluminação ambiente PlayStation & Neon Green */
+  background-image: 
+    radial-gradient(circle at 10% 15%, rgba(0, 112, 209, 0.08) 0%, transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(0, 229, 117, 0.07) 0%, transparent 40%),
+    radial-gradient(circle at 50% 85%, rgba(255, 184, 0, 0.04) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+  background-attachment: fixed;
+}
+
+/* Scrollbar com tema gamer */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo-principal);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-borda);
+  border-radius: var(--raio-full);
+  border: 2px solid var(--cor-fundo-principal);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-verde-marca);
+}
+
+/* ==========================================================================
+   Tipografia
+   ========================================================================== */
+
+h1, h2, h3, .titulo-anton {
+  font-family: var(--fonte-titulos);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  color: var(--cor-texto-principal);
+  text-wrap: balance;
+}
+
+h1, .display-1 {
+  font-size: var(--tipo-display);
+}
+
+h2, .display-2 {
+  font-size: var(--tipo-h1);
+}
+
+h3, .display-3 {
+  font-size: var(--tipo-h2);
+}
+
+h4, .subtitulo-archivo {
+  font-family: var(--fonte-subtitulos);
+  font-weight: 700;
+  font-size: var(--tipo-h3);
+  line-height: 1.3;
+  color: var(--cor-texto-principal);
+}
+
+/* Preços, números de marcador de estádio e pontuações */
+.numero-bebas,
+.preco-bebas,
+.pontuacao-bebas {
+  font-family: var(--fonte-numeros);
+  letter-spacing: 1px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+p {
+  color: var(--cor-texto-suave);
+  margin-bottom: var(--espaco-md);
+  max-width: 72ch;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+small, .texto-muted {
+  color: var(--cor-texto-muted);
+  font-size: var(--tipo-pequeno);
+}
+
+strong, b {
+  color: var(--cor-texto-principal);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Acessibilidade & Interatividade
+   ========================================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--cor-verde-marca);
+  outline-offset: 3px;
+  border-radius: var(--raio-sm);
+}
+
+::selection {
+  background-color: var(--cor-verde-marca);
+  color: #ffffff;
+}
+
+/* Barra de scroll estilizada e discreta */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-fundo-secundario);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-borda);
+  border-radius: var(--raio-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-borda-suave);
+}
+
+/* ==========================================================================
+   Font Awesome Helper Classes
+   ========================================================================== */
+
+.fa-btn-icon {
+  margin-right: 0.4rem;
+  display: inline-block;
+  vertical-align: -0.1em;
+}
+
+.fa-btn-icon-right {
+  margin-left: 0.4rem;
+  display: inline-block;
+  vertical-align: -0.1em;
+}
+
+.fa-card-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-verde {
+  color: var(--cor-verde-marca);
+}
+
+.fa-dourado {
+  color: var(--cor-dourado, #f59e0b);
+}
+
+.fa-azul {
+  color: #3b82f6;
+}
+
+.fa-vermelho {
+  color: #ef4444;
+}
+
+.fa-whatsapp-brand {
+  color: #25d366;
+}

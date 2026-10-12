@@ -1,0 +1,108 @@
+/* ==========================================================================
+   JOGATINAL - inscricao.css
+   Estilos específicos do formulário e fluxo de inscrição em torneios
+   ========================================================================== */
+
+.inscricao-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-xl);
+}
+
+@media (min-width: 1024px) {
+  .inscricao-layout-grid {
+    grid-template-columns: 1fr 1.35fr;
+    gap: var(--espaco-2xl);
+  }
+}
+
+/* Lista de cartões de torneios para escolha */
+.selecao-torneios-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-md);
+}
+
+.torneio-item-escolha {
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-md);
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+  position: relative;
+}
+
+.torneio-item-escolha:hover {
+  border-color: var(--cor-borda-suave);
+}
+
+.torneio-item-escolha.selecionado {
+  border-color: var(--cor-verde-marca);
+  background: linear-gradient(180deg, rgba(63, 168, 106, 0.08) 0%, var(--cor-superficie) 40%);
+}
+
+.torneio-item-escolha.esgotado {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.torneio-escolha-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--espaco-xs);
+}
+
+.torneio-escolha-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+}
+
+.torneio-escolha-premio {
+  font-family: var(--fonte-numeros);
+  font-size: 1.4rem;
+  color: var(--cor-dourado);
+}
+
+/* Painel de formulário de inscrição */
+.formulario-inscricao-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-xl);
+  padding: var(--espaco-xl);
+  box-shadow: var(--sombra-elevada);
+}
+
+.resumo-torneio-selecionado {
+  background-color: var(--cor-fundo-secundario);
+  border: 1px solid var(--cor-borda);
+  border-left: 3px solid var(--cor-verde-marca);
+  border-radius: var(--raio-md);
+  padding: var(--espaco-md);
+  margin-bottom: var(--espaco-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-xs);
+}
+
+.resumo-torneio-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+}
+
+.grid-campos-duplos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+  .grid-campos-duplos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,816 @@
+/* ==========================================================================
+   JOGATINAL - configurador.css
+   Estilos específicos do configurador de packs de jogos em 5 passos
+   ========================================================================== */
+
+/* ==========================================================================
+   Barra Gamer de Etapas / Passos HUD (Zero Sobreposição & Ultra Legível)
+   ========================================================================== */
+
+.configurador-etapas-nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  margin-top: var(--espaco-md);
+  margin-bottom: var(--espaco-xl);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1100px) {
+  .configurador-etapas-nav {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+.etapa-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  font-family: var(--fonte-gamer, var(--fonte-subtitulos));
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--cor-texto-suave);
+  border-radius: var(--raio-md);
+  background: linear-gradient(135deg, rgba(22, 28, 43, 0.95) 0%, rgba(16, 20, 31, 0.95) 100%);
+  border: 1px solid var(--cor-borda);
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transicao-rapida);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  min-width: 0;
+}
+
+.etapa-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: transparent;
+  transition: background var(--transicao-rapida);
+}
+
+.etapa-item:hover {
+  border-color: var(--cor-verde-marca);
+  color: var(--cor-texto-principal);
+  background: linear-gradient(135deg, rgba(31, 39, 59, 0.95) 0%, rgba(22, 28, 43, 0.95) 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5), 0 0 16px rgba(0, 229, 117, 0.15);
+}
+
+.etapa-item:hover::before {
+  background: var(--cor-verde-marca);
+}
+
+.etapa-item.ativo {
+  color: #ffffff;
+  border-color: var(--cor-verde-marca);
+  background: linear-gradient(135deg, rgba(0, 229, 117, 0.14) 0%, rgba(16, 20, 31, 0.95) 100%);
+  box-shadow: 0 0 20px rgba(0, 229, 117, 0.22), 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.etapa-item.ativo::before {
+  background: var(--cor-verde-marca);
+}
+
+.etapa-numero {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--cor-texto-muted);
+  font-family: var(--fonte-numeros);
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.etapa-item.ativo .etapa-numero {
+  background-color: var(--cor-verde-marca);
+  border-color: var(--cor-verde-marca);
+  color: #000000;
+  font-weight: 800;
+  box-shadow: 0 0 10px rgba(0, 229, 117, 0.5);
+}
+
+.etapa-texto {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .configurador-etapas-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    gap: 0.625rem;
+    padding-bottom: 0.75rem;
+    scrollbar-width: thin;
+  }
+  
+  .etapa-item {
+    flex: 0 0 auto;
+    min-width: 175px;
+    scroll-snap-align: start;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.85rem;
+  }
+}
+
+#passo-1,
+#passo-2,
+#passo-3,
+#passo-4,
+#passo-5 {
+  scroll-margin-top: calc(var(--altura-header) + 1.25rem);
+}
+
+/* ==========================================================================
+   PASSO 1: Seleção de Modos (🅰️, 🅱️, 🅲, 🅳)
+   ========================================================================== */
+
+.grid-modos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+  .grid-modos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-modos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.modo-card {
+  position: relative;
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-lg);
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+}
+
+.modo-card:hover {
+  border-color: var(--cor-borda-suave);
+  transform: translateY(-2px);
+}
+
+.modo-card.selecionado {
+  border-color: var(--cor-verde-marca);
+  background-color: rgba(63, 168, 106, 0.05);
+}
+
+.modo-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modo-letra {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--raio-sm);
+  background-color: var(--cor-fundo-secundario);
+  border: 1px solid var(--cor-borda);
+  font-family: var(--fonte-titulos);
+  font-size: 1rem;
+  color: var(--cor-texto-principal);
+}
+
+.modo-card.selecionado .modo-letra {
+  background-color: var(--cor-verde-marca);
+  border-color: var(--cor-verde-marca);
+  color: #ffffff;
+}
+
+.modo-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+}
+
+.modo-subtitulo {
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-suave);
+  line-height: 1.4;
+}
+
+.modo-taxa-tag {
+  font-size: var(--tipo-micro);
+  font-weight: 600;
+  color: var(--cor-dourado);
+  margin-top: auto;
+}
+
+/* ==========================================================================
+   PASSO 2: Seleção de Consola
+   ========================================================================== */
+
+.grid-consolas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--espaco-sm);
+}
+
+@media (min-width: 768px) {
+  .grid-consolas {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--espaco-md);
+  }
+}
+
+.consola-card {
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  padding: var(--espaco-md);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+}
+
+.consola-card:hover {
+  border-color: var(--cor-borda-suave);
+}
+
+.consola-card.selecionado {
+  border-color: var(--cor-verde-marca);
+  background-color: rgba(63, 168, 106, 0.08);
+}
+
+.consola-sigla {
+  font-family: var(--fonte-titulos);
+  font-size: 2rem;
+  color: var(--cor-texto-principal);
+  line-height: 1;
+}
+
+.consola-card.selecionado .consola-sigla {
+  color: var(--cor-verde-hover);
+}
+
+.consola-nome {
+  font-size: var(--tipo-micro);
+  color: var(--cor-texto-suave);
+  margin-top: var(--espaco-xs);
+}
+
+/* ==========================================================================
+   PASSO 3: Armazenamento e HDs
+   ========================================================================== */
+
+.atalhos-espaco-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaco-xs);
+  margin-top: var(--espaco-xs);
+}
+
+.btn-chip-atalho {
+  padding: 0.35rem 0.75rem;
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-sm);
+  font-size: var(--tipo-micro);
+  font-weight: 600;
+  color: var(--cor-texto-suave);
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+}
+
+.btn-chip-atalho:hover,
+.btn-chip-atalho.ativo {
+  border-color: var(--cor-verde-marca);
+  color: var(--cor-texto-principal);
+  background-color: var(--cor-verde-fundo);
+}
+
+.grid-hds {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+  .grid-hds {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.hd-card {
+  background-color: var(--cor-superficie);
+  border: 2px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-md);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-xs);
+  transition: all var(--transicao-rapida);
+  position: relative;
+}
+
+.hd-card:hover {
+  border-color: var(--cor-borda-suave);
+}
+
+.hd-card.selecionado {
+  border-color: var(--cor-verde-marca);
+  background-color: rgba(63, 168, 106, 0.05);
+}
+
+.hd-card-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hd-capacidade {
+  font-family: var(--fonte-titulos);
+  font-size: 1.5rem;
+  color: var(--cor-texto-principal);
+}
+
+.hd-preco {
+  font-family: var(--fonte-numeros);
+  font-size: 1.5rem;
+  color: var(--cor-dourado);
+}
+
+/* ==========================================================================
+   PASSO 4: Packs Sugeridos com Desconto
+   ========================================================================== */
+
+.grid-packs {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+  .grid-packs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-packs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pack-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+  position: relative;
+  transition: transform var(--transicao-rapida), border-color var(--transicao-rapida);
+}
+
+.pack-card:hover {
+  border-color: var(--cor-borda-suave);
+}
+
+.pack-card.aplicado {
+  border-color: var(--cor-dourado);
+  background: linear-gradient(180deg, rgba(232, 184, 75, 0.05) 0%, var(--cor-superficie) 30%);
+}
+
+.pack-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espaco-xs);
+}
+
+.pack-nome {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+}
+
+.pack-desconto-tag {
+  background: linear-gradient(135deg, var(--cor-dourado) 0%, #ff9d00 100%);
+  color: #000000;
+  font-family: var(--fonte-numeros);
+  font-size: 1.15rem;
+  font-weight: 800;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--raio-sm);
+  letter-spacing: 0.5px;
+  box-shadow: 0 0 10px rgba(255, 184, 0, 0.4);
+}
+
+.pack-jogos-lista {
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-suave);
+  line-height: 1.4;
+  margin: var(--espaco-xs) 0;
+}
+
+.pack-precos-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--espaco-sm);
+  margin-top: auto;
+  padding-top: var(--espaco-sm);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.pack-preco-original {
+  text-decoration: line-through;
+  color: var(--cor-texto-muted);
+  font-family: var(--fonte-numeros);
+  font-size: 1.15rem;
+}
+
+.pack-preco-desconto {
+  color: var(--cor-dourado);
+  font-family: var(--fonte-numeros);
+  font-size: 1.6rem;
+}
+
+.pack-poupanca {
+  font-size: var(--tipo-micro);
+  font-weight: 600;
+  color: var(--cor-verde-hover);
+  margin-left: auto;
+}
+
+.pack-acoes-row {
+  display: flex;
+  gap: var(--espaco-xs);
+  margin-top: var(--espaco-xs);
+}
+
+/* ==========================================================================
+   PASSO 5: Catálogo & Escolha de Jogos
+   ========================================================================== */
+
+.filtros-jogos-bar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+  margin-bottom: var(--espaco-lg);
+}
+
+@media (min-width: 768px) {
+  .filtros-jogos-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.jogo-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-md);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-xs);
+  transition: all var(--transicao-rapida);
+  position: relative;
+  user-select: none;
+}
+
+.jogo-card:hover:not(.bloqueado) {
+  border-color: var(--cor-borda-suave);
+  transform: translateY(-2px);
+}
+
+.jogo-card.selecionado {
+  border-color: var(--cor-verde-marca);
+  background-color: rgba(63, 168, 106, 0.06);
+}
+
+/* Jogos que NÃO cabem ficam bloqueados (opacity 0.4 conforme regra) */
+.jogo-card.bloqueado {
+  opacity: 0.4;
+  cursor: not-allowed;
+  filter: grayscale(60%);
+  pointer-events: none;
+}
+
+.jogo-card.incompativel {
+  opacity: 0.25;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.jogo-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--espaco-xs);
+}
+
+.jogo-nome {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  line-height: 1.25;
+}
+
+.jogo-check-box {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--raio-sm);
+  border: 1.5px solid var(--cor-borda);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: var(--cor-fundo-secundario);
+  transition: all var(--transicao-rapida);
+}
+
+.jogo-card.selecionado .jogo-check-box {
+  background-color: var(--cor-verde-marca);
+  border-color: var(--cor-verde-marca);
+  color: #ffffff;
+}
+
+.jogo-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--espaco-xs);
+  border-top: 1px solid var(--cor-borda);
+}
+
+.jogo-tamanho {
+  font-size: var(--tipo-micro);
+  font-weight: 600;
+  color: var(--cor-texto-suave);
+}
+
+.jogo-preco {
+  font-family: var(--fonte-numeros);
+  font-size: 1.35rem;
+  color: var(--cor-texto-principal);
+}
+
+.jogo-preco.gratis {
+  color: var(--cor-verde-hover);
+  font-family: var(--fonte-subtitulos);
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* ==========================================================================
+   RODAPÉ FIXO (Sticky Bottom Bar) - Otimizado para Mobile-First
+   Duas linhas limpas no smartphone: métricas em cima, ações em baixo
+   ========================================================================== */
+
+.configurador-rodape-fixo {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 95;
+  background-color: rgba(10, 12, 18, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid var(--cor-borda);
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.7);
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .configurador-rodape-fixo {
+    padding: var(--espaco-md) var(--espaco-xl);
+  }
+}
+
+.rodape-fixo-container {
+  max-width: var(--largura-maxima);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .rodape-fixo-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espaco-sm);
+  }
+}
+
+.rodape-metricas-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--espaco-xs);
+}
+
+@media (min-width: 640px) {
+  .rodape-metricas-row {
+    flex: 1;
+    justify-content: flex-start;
+    gap: var(--espaco-md);
+  }
+}
+
+.metrica-bloco {
+  display: flex;
+  flex-direction: column;
+}
+
+.metrica-rotulo {
+  font-size: var(--tipo-micro);
+  color: var(--cor-texto-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.metrica-valor {
+  font-family: var(--fonte-numeros);
+  font-size: 1.15rem;
+  color: var(--cor-texto-principal);
+  line-height: 1.1;
+}
+
+.metrica-valor.dourado {
+  color: var(--cor-dourado);
+  font-size: clamp(1.4rem, 4vw, 2.2rem);
+}
+
+.rodape-progresso-bloco {
+  display: none;
+  flex: 1;
+  min-width: 140px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+@media (min-width: 520px) {
+  .rodape-progresso-bloco {
+    display: flex;
+  }
+}
+
+.rodape-acoes-group {
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-xs);
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .rodape-acoes-group {
+    width: auto;
+    flex-shrink: 0;
+  }
+}
+
+.rodape-acoes-group .btn {
+  flex: 1;
+  min-height: 38px;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  font-size: var(--tipo-micro);
+  white-space: nowrap;
+}
+
+.rodape-acoes-group #btn-enviar-whatsapp {
+  flex: 1.8;
+  font-weight: 700;
+  min-width: 0;
+}
+
+@media (min-width: 640px) {
+  .rodape-acoes-group .btn {
+    flex: initial;
+    padding: 0.5rem 1rem;
+    font-size: var(--tipo-pequeno);
+  }
+}
+
+.btn-detalhes-mobile {
+  display: inline-flex;
+}
+
+@media (min-width: 768px) {
+  .btn-detalhes-mobile {
+    display: none;
+  }
+  #btn-exportar-pdf {
+    display: inline-flex !important;
+  }
+}
+
+/* ==========================================================================
+   Gaveta Bottom Sheet de Resumo Mobile (Desliza de baixo para cima)
+   ========================================================================== */
+
+.drawer-resumo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 105;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease, visibility 200ms;
+}
+
+.drawer-resumo-overlay.aberto {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer-resumo-conteudo {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 110;
+  background-color: var(--cor-superficie);
+  border-top: 2px solid var(--cor-verde-marca);
+  border-radius: var(--raio-xl) var(--raio-xl) 0 0;
+  padding: var(--espaco-lg) var(--espaco-md);
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 -12px 36px rgba(0, 0, 0, 0.6);
+  transform: translateY(100%);
+  transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.drawer-resumo-overlay.aberto .drawer-resumo-conteudo {
+  transform: translateY(0);
+}
+
+.drawer-resumo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--espaco-md);
+  padding-bottom: var(--espaco-xs);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.drawer-item-lista {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--cor-borda);
+  font-size: var(--tipo-pequeno);
+}

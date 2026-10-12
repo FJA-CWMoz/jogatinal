@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hist_fc25_inverno_2026",
+    "titulo": "Copa de Inverno FC 25 Matola",
+    "edicao": "Edição Julho 2026",
+    "jogo": "EA SPORTS FC 25",
+    "consola": "PlayStation 5",
+    "data": "19 e 20 de Julho de 2026",
+    "participantes": 32,
+    "premioDistribuido": "12.500 MT",
+    "campeao": {
+      "nome": "Celso Sitoe",
+      "nickname": "Kaiser",
+      "bairro": "Matola Muhalaze",
+      "placarFinal": "3 - 1",
+      "viceCampeao": "Edson Macamo (Ginga MZ)"
+    },
+    "destaques": "Final eletrizante transmitida com mais de 1.800 visualizações no canal do YouTube. Celso 'Kaiser' garantiu o título com golo no minuto 88.",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "youtubeUrl": "https://www.youtube.com/@JOGATINAL-MZ",
+    "imagem": "/assets/images/hero_championship_matola_1790914747226.jpg",
+    "status": "concluido",
+    "partidasDestaque": [
+      { "fase": "Final", "confronto": "Kaiser 3 vs 1 Ginga MZ", "tempo": "Full Match gravado no YouTube" },
+      { "fase": "Semi-final", "confronto": "Kaiser 2 vs 1 Flash Cossa", "tempo": "Melhores Momentos" },
+      { "fase": "Disputa 3º Lugar", "confronto": "Flash Cossa 4 vs 2 Dário", "tempo": "Prémio 1.500 MT pago via M-Pesa" }
+    ]
+  },
+  {
+    "id": "hist_tekken8_estreia",
+    "titulo": "Torneio de Abertura Tekken 8 Matola Clash",
+    "edicao": "Edição Agosto 2026",
+    "jogo": "Tekken 8",
+    "consola": "PlayStation 5",
+    "data": "23 de Agosto de 2026",
+    "participantes": 16,
+    "premioDistribuido": "7.000 MT",
+    "campeao": {
+      "nome": "Armando Langa",
+      "nickname": "Shadow MZ",
+      "bairro": "Matola Rio",
+      "placarFinal": "3 - 2 (Grand Finals)",
+      "viceCampeao": "Tércio Machava (IronFist)"
+    },
+    "destaques": "Grande final decidida no round final de Jin Kazama vs Kazuya Mishima em ecrãs de 120Hz com comentários ao vivo.",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "youtubeUrl": "https://www.youtube.com/@JOGATINAL-MZ",
+    "imagem": "/assets/images/tournament_fc25_cover_1790914757223.jpg",
+    "status": "concluido",
+    "partidasDestaque": [
+      { "fase": "Grand Finals", "confronto": "Shadow MZ 3 vs 2 IronFist", "tempo": "VOD completo disponível" },
+      { "fase": "Winners Finals", "confronto": "Shadow MZ 3 vs 1 Killa", "tempo": "Knockout Highlights" }
+    ]
+  },
+  {
+    "id": "hist_bomba_patch_nostalgia",
+    "titulo": "Torneio Nostalgia Bomba Patch 100% Retrô",
+    "edicao": "Edição Junho 2026",
+    "jogo": "Bomba Patch / PES Clássico",
+    "consola": "PlayStation 2",
+    "data": "14 de Junho de 2026",
+    "participantes": 24,
+    "premioDistribuido": "4.500 MT",
+    "campeao": {
+      "nome": "Edson Macamo",
+      "nickname": "Ginga MZ",
+      "bairro": "Machava Socimol",
+      "placarFinal": "2 - 0",
+      "viceCampeao": "Yassine Patel (Sniper)"
+    },
+    "destaques": "A lenda do PS2 reuniu veteranos e jovens da Matola numa tarde memorável com narração clássica e troféu temático.",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "youtubeUrl": "https://www.youtube.com/@JOGATINAL-MZ",
+    "imagem": "/assets/images/hero_championship_matola_1790914747226.jpg",
+    "status": "concluido",
+    "partidasDestaque": [
+      { "fase": "Final", "confronto": "Ginga MZ (Inter) 2 vs 0 Sniper (Barcelona)", "tempo": "Golaço de Adriano Imperador" },
+      { "fase": "Semi-final", "confronto": "Ginga MZ 1 vs 0 Nando", "tempo": "Prorrogação de tirar o fôlego" }
+    ]
+  },
+  {
+    "id": "hist_desafio_snipers_cod",
+    "titulo": "Arena Shootout Call of Duty 1v1 Rust",
+    "edicao": "Edição Setembro 2026",
+    "jogo": "Call of Duty MW3",
+    "consola": "PlayStation 5",
+    "data": "12 de Setembro de 2026",
+    "participantes": 16,
+    "premioDistribuido": "3.500 MT",
+    "campeao": {
+      "nome": "Yassine Patel",
+      "nickname": "Sniper",
+      "bairro": "Central Maputo",
+      "placarFinal": "20 - 14",
+      "viceCampeao": "Rui Mondlane (Ghost MZ)"
+    },
+    "destaques": "Confronto frenético de Quickscope em Rust. Sniper levou o pote acumulado e consagrou-se o atirador mais rápido da Arena.",
+    "youtubeVideoId": "dQw4w9WgXcQ",
+    "youtubeUrl": "https://www.youtube.com/@JOGATINAL-MZ",
+    "imagem": "/assets/images/joysticks_display_1790917278138.jpg",
+    "status": "concluido",
+    "partidasDestaque": [
+      { "fase": "Final Rust", "confronto": "Sniper 20 vs 14 Ghost MZ", "tempo": "Melhores Kills no YouTube" }
+    ]
+  }
+]

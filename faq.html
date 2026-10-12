@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perguntas Frequentes (FAQ) | JOGATINAL Matola</title>
+  <meta name="description" content="Tire suas dúvidas sobre compra e venda de consolas, comandos Joy's, CD's de jogos, retoma de usados e instalação em HDs em Matola Muhalaze / Ngolhoza." />
+  <meta name="theme-color" content="#14120f" />
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+  
+  <!-- CSS Modular -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/paginas.css" />
+</head>
+<body>
+
+  <!-- Header Sticky (3 Zonas) -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="JOGATINAL - Página Inicial">
+        <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+        <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links-desktop" role="navigation" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="torneios.html" class="nav-link">Torneios & Desafios</a>
+        <a href="loja.html" class="nav-link">Loja & Consolas</a>
+        <a href="jogos.html" class="nav-link">Jogos no HD</a>
+        <a href="vender.html" class="nav-link">Vender / Retoma</a>
+        <a href="sobre.html" class="nav-link">Quem Somos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="loja.html" class="btn btn-sm btn-verde btn-header-cta">
+          <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Loja
+        </a>
+
+        <button id="btn-menu-toggle" class="btn-menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span id="icone-hamburger"><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile -->
+  <div id="mobile-menu-drawer" class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html"><i class="fa-solid fa-house fa-btn-icon"></i> Início</a></li>
+      <li class="mobile-nav-item"><a href="torneios.html"><i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios & Desafios</a></li>
+      <li class="mobile-nav-item"><a href="loja.html"><i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Loja (Consolas, Joy's & CD's)</a></li>
+      <li class="mobile-nav-item"><a href="jogos.html"><i class="fa-solid fa-hard-drive fa-btn-icon"></i> Montar Jogos no HD</a></li>
+      <li class="mobile-nav-item"><a href="vender.html"><i class="fa-solid fa-hand-holding-dollar fa-btn-icon"></i> Vender / Retoma de Usados</a></li>
+      <li class="mobile-nav-item"><a href="sobre.html"><i class="fa-solid fa-building fa-btn-icon"></i> Quem Somos & Garantias</a></li>
+      <li class="mobile-nav-item"><a href="contacto.html"><i class="fa-solid fa-location-dot fa-btn-icon"></i> Contacto</a></li>
+      <li class="mobile-nav-item"><a href="faq.html" class="ativo"><i class="fa-solid fa-circle-question fa-btn-icon"></i> Perguntas Frequentes</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="loja.html" class="btn btn-verde btn-block">
+        <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Artigos à Venda
+      </a>
+      <p class="texto-muted" style="text-align: center; font-size: var(--tipo-micro); margin-top: 6px;">
+        Matola Muhalaze / Ngolhoza · Moçambique
+      </p>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+    <section class="section-hero">
+      <div class="content-container">
+        <div class="regulamento-wrapper">
+          <span class="hero-kicker">Ajuda & Dúvidas Comuns</span>
+          <h1 class="display-1" style="margin-top: 6px; margin-bottom: var(--espaco-sm);">
+            PERGUNTAS FREQUENTES (FAQ)
+          </h1>
+          <p class="hero-subtitle">
+            Encontra aqui todas as respostas sobre compra, venda e retoma de consolas, comandos Joy's, CD's de jogos e instalação de ficheiros em HDs na Matola.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lista de Perguntas e Respostas -->
+    <section class="section-bloco">
+      <div class="content-container">
+        <div class="regulamento-wrapper" style="display: flex; flex-direction: column; gap: var(--espaco-lg);">
+
+          <!-- Pergunta 1: Compra na Loja -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              1. As consolas e comandos semi-novos têm garantia?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              Sim! Todas as consolas semi-novas vendidas pela JOGATINAL são abertas, higienizadas, recebem massa térmica de alta condutividade e passam por teste de bancada de 10 minutos com o cliente. Oferecemos <strong>90 dias de garantia com termo documentado</strong>. Os comandos semi-novos têm 30 dias de garantia contra falhas de conexão ou botões.
+            </p>
+          </div>
+
+          <!-- Pergunta 2: Venda / Retoma de Usados -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              2. Como funciona se eu quiser vender a minha consola ou comandos usados?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              É muito simples: podes usar o nosso simulador na página <a href="vender.html" style="color: var(--cor-verde-marca); text-decoration: underline;">Vender / Retoma</a> para ter uma estimativa do valor, ou enviar fotos diretamente pelo WhatsApp (+258 85 339 0327). Após um teste rápido de 10 minutos na nossa bancada em Matola Muhalaze / Ngolhoza, o pagamento é transferido <strong>na hora via M-Pesa, e-Mola ou entregue em numerário</strong>.
+            </p>
+          </div>
+
+          <!-- Pergunta 3: Troca de Jogos em CD -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              3. Aceitam troca de CD's de jogos usados?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              Sim! Se tens um jogo em CD que já terminaste (ex: GTA V ou Spider-Man), podes trazê-lo para a nossa loja. Avaliamos o estado do disco e da caixa e podes levar um jogo novo ou semi-novo (ex: FC 25) pagando apenas a diferença.
+            </p>
+          </div>
+
+          <!-- Pergunta 4: Comandos Avariados -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              4. Compram comandos (Joy's) com defeito ou drift nos analógicos?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              Sim! Aceitamos comandos DualSense ou DualShock originais mesmo com drift ou botões desgastados. Avaliamos para reaproveitamento de componentes e peças ou fazemos a reparação com desconto caso queiras consertar.
+            </p>
+          </div>
+
+          <!-- Pergunta 5: Instalação em HD -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              5. Posso levar o meu próprio HD externo para instalar jogos?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              Sim! No Passo 1 do nosso <a href="jogos.html" style="color: var(--cor-verde-marca); text-decoration: underline;">Configurador de Jogos</a>, escolhe a opção <strong>"Trago o meu HD" (Modo A)</strong>. Podes trazer qualquer disco rígido USB 3.0 de 2.5 polegadas ou SSD portátil. Nós formatamos no sistema de ficheiros correto e gravamos os jogos selecionados com garantia de arranque.
+            </p>
+          </div>
+
+          <!-- Pergunta 6: Localização e Entrega -->
+          <div class="card card-destaque">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+              6. Onde fica a loja e como funciona a entrega ao domicílio?
+            </h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin: 0;">
+              Estamos localizados em <strong>Matola Muhalaze / Ngolhoza</strong>, com fácil acesso por chapa e transporte local. Se preferires comodidade, os nossos técnicos deslocam-se até à tua residência em Muhalaze, Ngolhoza, Matola Gare, Intaka, Machava ou Maputo Cidade com os equipamentos prontos e testados.
+            </p>
+          </div>
+
+          <div style="text-align: center; margin-top: var(--espaco-xl);">
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin-bottom: var(--espaco-md);">
+              Tens outra questão que não está aqui? Fala connosco diretamente no WhatsApp.
+            </p>
+            <a href="contacto.html" class="btn btn-verde">Falar com o Atendimento →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão Flutuante de WhatsApp Mobile -->
+  <a href="https://wa.me/258853390327" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-flutuante" aria-label="Conversar no WhatsApp com a JOGATINAL" title="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="site-brand" style="margin-bottom: var(--espaco-md);">
+            <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+            <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+          </a>
+          <p style="font-size: var(--tipo-pequeno); line-height: 1.6;">
+            A maior loja de compra e venda de consolas, comandos e CD's de jogos, além de gravação e configuração profissional de discos em Matola Muhalaze / Ngolhoza.
+          </p>
+          <div class="metadados-linha" style="margin-top: var(--espaco-md);">
+            <span><i class="fa-solid fa-location-dot fa-verde fa-btn-icon"></i> Matola Muhalaze / Ngolhoza</span>
+            <span class="metadados-separador">·</span>
+            <span>Maputo</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Página Inicial</a></li>
+            <li><a href="loja.html" class="footer-link">Loja (Consolas, Joy's & CD's)</a></li>
+            <li><a href="jogos.html" class="footer-link">Configurador de Jogos em HD</a></li>
+            <li><a href="vender.html" class="footer-link">Vender / Retoma de Usados</a></li>
+            <li><a href="sobre.html" class="footer-link">Quem Somos & Garantias</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Institucional</h4>
+          <ul class="footer-links-list">
+            <li><a href="sobre.html" class="footer-link">Termos de Garantia</a></li>
+            <li><a href="contacto.html" class="footer-link">Localização da Loja</a></li>
+            <li><a href="faq.html" class="footer-link">Perguntas Frequentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Atendimento</h4>
+          <p style="font-size: var(--tipo-pequeno); margin-bottom: var(--espaco-sm);">
+            <strong>WhatsApp & Chamadas:</strong> <a href="tel:+258853390327" style="color: inherit; text-decoration: underline;">+258 85 339 0327</a><br />
+            <strong>Email:</strong> contacto@jogatinal.mz
+          </p>
+          <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave);">
+            Segunda a Sábado: 08h00 - 19h00
+          </p>
+          <div style="margin-top: var(--espaco-md); display: flex; gap: var(--espaco-xs); flex-wrap: wrap;">
+            <span class="badge-estado aberto">M-Pesa</span>
+            <span class="badge-estado aberto">e-Mola</span>
+            <span class="badge-estado aberto">BIM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; <span id="ano-corrente">2026</span> JOGATINAL. Todos os direitos reservados.</span>
+        <span>Matola Muhalaze / Ngolhoza, Província de Maputo, Moçambique.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script type="module" src="/js/pwa.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/paginas.js"></script>
+</body>
+</html>

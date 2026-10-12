@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurador de Jogos & Packs | JOGATINAL Matola</title>
+  <meta name="description" content="Monta o teu pack personalizado de jogos digitais para PlayStation na Matola. Escolhe o modo de entrega, a consola, o disco rígido e aproveita descontos de até 22%." />
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+  
+  <!-- CSS Modular por responsabilidade -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/configurador.css" />
+</head>
+<body id="configurador-app" style="padding-bottom: 120px;">
+
+  <!-- Header Sticky (3 Zonas) -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="JOGATINAL - Página Inicial">
+        <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+        <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links-desktop" role="navigation" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="torneios.html" class="nav-link">Torneios & Desafios</a>
+        <a href="loja.html" class="nav-link">Loja & Consolas</a>
+        <a href="jogos.html" class="nav-link ativo" aria-current="page">Jogos no HD</a>
+        <a href="vender.html" class="nav-link">Vender / Retoma</a>
+        <a href="sobre.html" class="nav-link">Quem Somos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="torneios.html" class="btn btn-sm btn-outline btn-header-cta">
+          <i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios
+        </a>
+        <a href="loja.html" class="btn btn-sm btn-verde btn-header-cta">
+          <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Loja
+        </a>
+
+        <button id="btn-menu-toggle" class="btn-menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span id="icone-hamburger"><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta de Menu Mobile -->
+  <div id="mobile-menu-drawer" class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html"><i class="fa-solid fa-house fa-btn-icon"></i> Início</a></li>
+      <li class="mobile-nav-item"><a href="torneios.html"><i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios & Desafios</a></li>
+      <li class="mobile-nav-item"><a href="loja.html"><i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Loja (Consolas, Joy's & CD's)</a></li>
+      <li class="mobile-nav-item"><a href="jogos.html" class="ativo"><i class="fa-solid fa-hard-drive fa-btn-icon"></i> Montar Jogos no HD</a></li>
+      <li class="mobile-nav-item"><a href="vender.html"><i class="fa-solid fa-hand-holding-dollar fa-btn-icon"></i> Vender / Retoma de Usados</a></li>
+      <li class="mobile-nav-item"><a href="sobre.html"><i class="fa-solid fa-building fa-btn-icon"></i> Quem Somos & Garantias</a></li>
+      <li class="mobile-nav-item"><a href="contacto.html"><i class="fa-solid fa-location-dot fa-btn-icon"></i> Localização & Contacto</a></li>
+      <li class="mobile-nav-item"><a href="faq.html"><i class="fa-solid fa-circle-question fa-btn-icon"></i> Perguntas Frequentes</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="loja.html" class="btn btn-verde btn-block">
+        <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Consolas & CD's à Venda
+      </a>
+      <p class="texto-muted" style="text-align: center; font-size: var(--tipo-micro); margin-top: 6px;">
+        Matola Muhalaze / Ngolhoza · Cidade da Matola
+      </p>
+    </div>
+  </div>
+
+  <main id="conteudo-principal" style="padding-bottom: 125px;">
+    <!-- Cabeçalho do Configurador -->
+    <section class="section-bloco" style="padding-top: var(--espaco-xl); padding-bottom: var(--espaco-lg);">
+      <div class="content-container">
+        <div style="max-width: 860px;">
+          <span class="section-kicker"><i class="fa-solid fa-gamepad fa-verde"></i> Sistema de Instalação de Jogos PlayStation</span>
+          <h1 class="display-1" style="margin-top: 6px; margin-bottom: var(--espaco-sm);">
+            CONFIGURADOR DE JOGOS & PACKS
+          </h1>
+          <p style="font-size: var(--tipo-corpo); color: var(--cor-texto-suave);">
+            Escolhe o teu modelo de entrega, a tua consola e o armazenamento disponível. O nosso sistema calcula automaticamente os tamanhos reais dos ficheiros em GB e aplica descontos automáticos de pack no total!
+          </p>
+        </div>
+
+
+
+        <!-- Indicador Visual dos 5 Passos (Navegação Rápida HUD) -->
+        <nav class="configurador-etapas-nav" aria-label="Passos da Configuração">
+          <a href="#passo-1" class="etapa-item ativo" title="Ir para Passo 1: Modo de Levar">
+            <span class="etapa-numero">01</span>
+            <span class="etapa-texto"><i class="fa-solid fa-truck-fast fa-verde"></i> Modo de Levar</span>
+          </a>
+          <a href="#passo-2" class="etapa-item" title="Ir para Passo 2: Consola">
+            <span class="etapa-numero">02</span>
+            <span class="etapa-texto"><i class="fa-brands fa-playstation fa-azul"></i> Consola</span>
+          </a>
+          <a href="#passo-3" class="etapa-item" title="Ir para Passo 3: Armazenamento">
+            <span class="etapa-numero">03</span>
+            <span class="etapa-texto"><i class="fa-solid fa-hard-drive fa-dourado"></i> Armazenamento</span>
+          </a>
+          <a href="#passo-4" class="etapa-item" title="Ir para Passo 4: Packs com Desconto">
+            <span class="etapa-numero">04</span>
+            <span class="etapa-texto"><i class="fa-solid fa-tags fa-verde"></i> Packs & Desconto</span>
+          </a>
+          <a href="#passo-5" class="etapa-item" title="Ir para Passo 5: Catálogo de Jogos">
+            <span class="etapa-numero">05</span>
+            <span class="etapa-texto"><i class="fa-solid fa-gamepad fa-dourado"></i> Catálogo de Jogos</span>
+          </a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PASSO 1: Como queres levar? (4 Modos: A, B, C, D)
+         ========================================================================== -->
+    <section id="passo-1" class="section-bloco" style="padding-top: 0;">
+      <div class="content-container">
+        <div class="section-header-row" style="margin-bottom: var(--espaco-md);">
+          <div>
+            <span class="section-kicker">Passo 1 de 5</span>
+            <h2 class="display-3">Como queres levar?</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Seleciona uma das opções abaixo</span>
+        </div>
+
+        <div id="container-modos" class="grid-modos">
+          <!-- Preenchido dinamicamente via configurador.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PASSO 2: Seleção da Consola (PS2 / PS3 / PS4 / PS5)
+         ========================================================================== -->
+    <section id="passo-2" class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row" style="margin-bottom: var(--espaco-md);">
+          <div>
+            <span class="section-kicker">Passo 2 de 5</span>
+            <h2 class="display-3">Qual é a tua Consola?</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Os tamanhos e compatibilidades variam por geração</span>
+        </div>
+
+        <div class="grid-consolas">
+          <div class="consola-card" data-consola="PS5">
+            <div class="consola-sigla">PS5</div>
+            <div class="consola-nome">PlayStation 5</div>
+          </div>
+          <div class="consola-card selecionado" data-consola="PS4">
+            <div class="consola-sigla">PS4</div>
+            <div class="consola-nome">PlayStation 4</div>
+          </div>
+          <div class="consola-card" data-consola="PS3">
+            <div class="consola-sigla">PS3</div>
+            <div class="consola-nome">PlayStation 3</div>
+          </div>
+          <div class="consola-card" data-consola="PS2">
+            <div class="consola-sigla">PS2</div>
+            <div class="consola-nome">PlayStation 2</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PASSO 3: Espaço ou HD à Venda / Deslocação
+         ========================================================================== -->
+    <section id="passo-3" class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row" style="margin-bottom: var(--espaco-md);">
+          <div>
+            <span class="section-kicker">Passo 3 de 5</span>
+            <h2 class="display-3">Armazenamento & Localização</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Define a capacidade total do teu disco</span>
+        </div>
+
+        <!-- Se Modo A ou C: Capacidade Manual em GB + Atalhos -->
+        <div id="seccao-espaco-manual" class="card" style="margin-bottom: var(--espaco-md);">
+          <div class="form-group" style="max-width: 480px;">
+            <label for="input-capacidade-manual" class="form-label">
+              Capacidade do teu HD (em GB):
+            </label>
+            <div style="display: flex; gap: var(--espaco-sm); align-items: center;">
+              <input type="number" id="input-capacidade-manual" class="form-control" value="500" min="50" max="8000" step="50" style="font-family: var(--fonte-numeros); font-size: 1.4rem;" />
+              <span style="font-weight: 700; color: var(--cor-texto-suave);">GB</span>
+            </div>
+
+            <div class="atalhos-espaco-row">
+              <span class="texto-muted" style="font-size: var(--tipo-micro);">Atalhos comuns:</span>
+              <button type="button" class="btn-chip-atalho" data-gb="100">100 GB</button>
+              <button type="button" class="btn-chip-atalho" data-gb="400">400 GB</button>
+              <button type="button" class="btn-chip-atalho ativo" data-gb="500">500 GB</button>
+              <button type="button" class="btn-chip-atalho" data-gb="1000">1 TB (1000 GB)</button>
+              <button type="button" class="btn-chip-atalho" data-gb="2000">2 TB (2000 GB)</button>
+            </div>
+
+            <div style="margin-top: var(--espaco-md); padding-top: var(--espaco-sm); border-top: 1px dashed var(--cor-borda);">
+              <label class="form-checkbox-label">
+                <input type="checkbox" id="checkbox-deduzir-so" />
+                <span>
+                  <strong>Deduzir Sistema da Consola (~90 GB reservados):</strong> 
+                  <span class="texto-muted">O sistema operativo da PlayStation ocupa cerca de 90 GB do disco. Ativa para calcular apenas o espaço líquido real utilizável para jogos.</span>
+                </span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Se Modo C: Escolher Zona de Deslocação -->
+        <div id="seccao-zonas-deslocacao" class="card" style="margin-bottom: var(--espaco-md); display: none;">
+          <h4 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+            <i class="fa-solid fa-location-dot fa-btn-icon fa-verde"></i> Escolhe a tua Zona de Deslocação
+          </h4>
+          <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin-bottom: var(--espaco-md);">
+            O técnico levará o equipamento necessário e procederá com a instalação na tua residência.
+          </p>
+          <div class="form-group" style="max-width: 580px;">
+            <label for="select-zonas-deslocacao" class="form-label">Zona / Bairro de Atendimento:</label>
+            <select id="select-zonas-deslocacao" class="form-control"></select>
+          </div>
+        </div>
+
+        <!-- Se Modo B ou D: Lista de HDs à Venda na Loja -->
+        <div id="seccao-hds-loja" style="display: none;">
+          <h4 class="subtitulo-archivo" style="margin-bottom: var(--espaco-xs);">
+            <i class="fa-solid fa-hard-drive fa-btn-icon fa-dourado"></i> Escolhe o HD que desejas Comprar
+          </h4>
+          <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin-bottom: var(--espaco-md);">
+            Discos externos de 2.5 USB 3.0 novos, selados e com garantia de funcionamento em consolas.
+          </p>
+          <div id="container-hds-loja" class="grid-hds"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PASSO 4: Packs Sugeridos com Desconto (15% a 22%)
+         ========================================================================== -->
+    <section id="passo-4" class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row" style="margin-bottom: var(--espaco-md);">
+          <div>
+            <span class="section-kicker">Passo 4 de 5</span>
+            <h2 class="display-3">Packs Sugeridos & Descontos</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Aplica um pack para poupar até 22%</span>
+        </div>
+
+        <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin-bottom: var(--espaco-lg);">
+          Ao clicar em <strong>"Aplicar Pack"</strong>, os jogos da coleção são selecionados automaticamente no catálogo. Podes depois adicionar outros jogos ou remover títulos, mantendo o desconto enquanto respeitares o número mínimo exigido.
+        </p>
+
+        <div id="container-packs" class="grid-packs">
+          <!-- Preenchido dinamicamente via configurador.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PASSO 5: Escolha de Jogos & Busca em Tempo Real
+         ========================================================================== -->
+    <section id="passo-5" class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row" style="margin-bottom: var(--espaco-md);">
+          <div>
+            <span class="section-kicker">Passo 5 de 5</span>
+            <h2 class="display-3">Catálogo & Seleção Individual</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Clica no cartão do jogo para marcar ou desmarcar</span>
+        </div>
+
+        <!-- Barra de Busca & Filtro de Género -->
+        <div class="filtros-jogos-bar">
+          <div style="flex: 1; position: relative;">
+            <input 
+              type="text" 
+              id="input-busca-jogos" 
+              class="form-control" 
+              placeholder="Procurar por nome, género ou tag (ex: FC 25, futebol, GTA, tiro)..."
+              aria-label="Procurar jogos no catálogo"
+            />
+          </div>
+
+          <div style="display: flex; gap: var(--espaco-xs); flex-wrap: wrap; width: 100%;">
+            <select id="select-genero-jogos" class="form-control" style="flex: 1 1 120px; max-width: 100%;" aria-label="Filtrar por género de jogo">
+              <option value="todos">Todos os Géneros</option>
+            </select>
+            <button type="button" id="btn-limpar-jogos" class="btn btn-sm btn-outline" title="Limpar todos os jogos selecionados">
+              <i class="fa-solid fa-trash-can fa-btn-icon"></i> Limpar
+            </button>
+          </div>
+        </div>
+
+        <!-- Filtro Rápido por Consola & Ordem Alfabética A a Z -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--espaco-xs); margin-top: var(--espaco-sm); margin-bottom: var(--espaco-xs); background-color: var(--cor-superficie); padding: 8px 10px; border-radius: var(--raio-md); border: 1px solid var(--cor-borda); width: 100%; box-sizing: border-box;">
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; align-items: center;">
+            <span class="texto-muted" style="font-size: var(--tipo-micro); font-weight: 700; text-transform: uppercase;"><i class="fa-brands fa-playstation fa-btn-icon"></i> Consola:</span>
+            <button type="button" class="btn btn-sm btn-outline btn-filtro-consola-passo5" data-consola="PS5">PS5</button>
+            <button type="button" class="btn btn-sm btn-outline btn-filtro-consola-passo5" data-consola="PS4">PS4</button>
+            <button type="button" class="btn btn-sm btn-outline btn-filtro-consola-passo5" data-consola="PS3">PS3</button>
+            <button type="button" class="btn btn-sm btn-outline btn-filtro-consola-passo5" data-consola="PS2">PS2</button>
+          </div>
+          <span id="contador-jogos-az" class="badge-estado aberto" style="font-size: var(--tipo-micro);">
+            <i class="fa-solid fa-arrow-down-a-z fa-btn-icon"></i> Ordem Alfabética (A → Z)
+          </span>
+        </div>
+
+        <!-- Grelha de Cards de Jogos -->
+        <div id="container-jogos" class="grid-jogos">
+          <!-- Preenchido reativamente via configurador.js em ordem A a Z -->
+        </div>
+
+        <!-- ==========================================================================
+             Simulador de Poupança de Megas / Internet Móvel vs. HD JOGATINAL
+             ========================================================================== -->
+        <div id="card-comparador-megas" class="card card-premio" style="margin-top: var(--espaco-2xl);">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: var(--espaco-sm);">
+            <div>
+              <span class="badge-estado destaque">Economia Real em Moçambique</span>
+              <h3 style="font-family: var(--fonte-subtitulos); font-size: 1.25rem; font-weight: 700; margin-top: 6px;">
+                <i class="fa-solid fa-lightbulb fa-dourado"></i> Comparativo: Dados Móveis vs. Instalação JOGATINAL
+              </h3>
+            </div>
+            <div style="text-align: right;">
+              <span class="texto-muted" style="font-size: var(--tipo-micro);">Poupança Estimada</span>
+              <div id="valor-poupanca-dados" class="preco-bebas" style="font-size: 2.2rem; color: var(--cor-verde-hover);">0 MT</div>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr; gap: var(--espaco-md); margin-top: var(--espaco-md);" class="grid-comparador-dados">
+            <div style="background-color: var(--cor-fundo-secundario); border: 1px solid var(--cor-borda); border-radius: var(--raio-md); padding: var(--espaco-md);">
+              <h4 style="color: var(--cor-vermelho-erro); font-size: 1rem; margin-bottom: 6px;"><i class="fa-solid fa-wifi fa-btn-icon"></i> Se fosses descarregar por Dados Móveis:</h4>
+              <p style="font-size: var(--tipo-pequeno); margin: 0; line-height: 1.6;">
+                • Custo estimado em pacotes (Vodacom / Movitel): <strong id="custo-estimado-megas" style="color: var(--cor-vermelho-erro);">0 MT</strong><br />
+                • Tempo de download contínuo: <strong id="tempo-estimado-download">~0 horas</strong><br />
+                • Risco elevado de corte de rede ou falha de ficheiro a meio do download.
+              </p>
+            </div>
+
+            <div style="background-color: var(--cor-fundo-secundario); border: 1px solid var(--cor-borda); border-left: 3px solid var(--cor-verde-marca); border-radius: var(--raio-md); padding: var(--espaco-md);">
+              <h4 style="color: var(--cor-verde-hover); font-size: 1rem; margin-bottom: 6px;"><i class="fa-solid fa-bolt fa-verde fa-btn-icon"></i> Com a Instalação Profissional JOGATINAL no HD:</h4>
+              <p style="font-size: var(--tipo-pequeno); margin: 0; line-height: 1.6;">
+                • Pagas apenas o valor do jogo/pack: <strong id="custo-jogatinal-comparativo" style="color: var(--cor-dourado);">0 MT</strong><br />
+                • Tempo de gravação no HD: <strong id="tempo-gravacao-comparativo">~15 minutos</strong><br />
+                • Garantia de 7 dias de arranque na consola sem gastar 1 único Mega do teu saldo!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       RODAPÉ FIXO (Sticky Bottom Bar)
+       Contagem de jogos, barra de progresso, total em dourado, PDF e WhatsApp
+       ========================================================================== -->
+  <aside class="configurador-rodape-fixo" role="region" aria-label="Resumo da Encomenda">
+    <div class="rodape-fixo-container">
+      <div class="rodape-metricas-row">
+        <!-- Contagem de Jogos -->
+        <div class="metrica-bloco">
+          <span class="metrica-rotulo">Jogos</span>
+          <span id="rodape-jogos-contagem" class="metrica-valor">0 jogos</span>
+        </div>
+
+        <!-- Armazenamento Usado com Barra de Progresso Dinâmica -->
+        <div class="rodape-progresso-bloco">
+          <div style="display: flex; justify-content: space-between; font-size: var(--tipo-micro);">
+            <span class="metrica-rotulo">Espaço no HD:</span>
+            <span id="rodape-espaco-texto" style="font-weight: 600; color: var(--cor-texto-principal);">0 / 500 GB</span>
+          </div>
+          <div class="progresso-container">
+            <div id="rodape-barra-progresso" class="progresso-barra" style="width: 0%;"></div>
+          </div>
+          <span id="rodape-tempo-instalacao" class="texto-muted" style="font-size: 0.7rem;">~10 min instalação</span>
+        </div>
+
+        <!-- Valor Total em Dourado Grande -->
+        <div class="metrica-bloco" style="text-align: right;">
+          <span class="metrica-rotulo">Total Estimado</span>
+          <span id="rodape-valor-total" class="metrica-valor dourado">0 MT</span>
+        </div>
+      </div>
+
+      <!-- Ações: Exportar PDF, Partilhar Link e Enviar WhatsApp -->
+      <div class="rodape-acoes-group">
+        <button id="btn-partilhar-link" class="btn btn-sm btn-outline" type="button" aria-label="Partilhar link da encomenda">
+          <i class="fa-solid fa-share-nodes fa-btn-icon"></i> Partilhar
+        </button>
+        <button id="btn-abrir-resumo-drawer" class="btn btn-sm btn-secundario btn-detalhes-mobile" type="button" aria-label="Ver detalhes da encomenda">
+          <i class="fa-solid fa-clipboard-list fa-btn-icon"></i> Resumo
+        </button>
+        <button id="btn-exportar-pdf" class="btn btn-secundario" type="button" aria-label="Gerar Orçamento em PDF" style="display: none;">
+          <i class="fa-solid fa-file-pdf fa-btn-icon"></i> PDF
+        </button>
+        <button id="btn-enviar-whatsapp" class="btn btn-verde" type="button" aria-label="Enviar Encomenda por WhatsApp">
+          <i class="fa-brands fa-whatsapp fa-btn-icon"></i> Encomendar
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Gaveta Mobile Bottom Sheet (Resumo Detalhado do Pedido) -->
+  <div id="drawer-resumo-overlay" class="drawer-resumo-overlay" role="dialog" aria-modal="true" aria-label="Detalhes da Encomenda">
+    <div class="drawer-resumo-conteudo">
+      <div class="drawer-resumo-header">
+        <h3 class="subtitulo-archivo" style="margin: 0; font-size: 1.15rem;">Resumo da Encomenda</h3>
+        <button id="btn-fechar-drawer" class="btn btn-sm btn-secundario" type="button" aria-label="Fechar resumo"><i class="fa-solid fa-xmark"></i> Fechar</button>
+      </div>
+
+      <div id="drawer-resumo-corpo">
+        <!-- Preenchido dinamicamente via configurador.js -->
+      </div>
+
+      <div style="display: flex; gap: var(--espaco-xs); margin-top: var(--espaco-md); flex-wrap: wrap; width: 100%;">
+        <button id="btn-drawer-partilhar" class="btn btn-outline" style="flex: 1 1 110px;" type="button">
+          <i class="fa-solid fa-copy fa-btn-icon"></i> Copiar Link
+        </button>
+        <button id="btn-drawer-pdf" class="btn btn-secundario" style="flex: 1 1 110px;" type="button">
+          <i class="fa-solid fa-file-pdf fa-btn-icon"></i> PDF
+        </button>
+        <button id="btn-drawer-whatsapp" class="btn btn-verde btn-block" style="width: 100%; margin-top: 4px;" type="button">
+          <i class="fa-brands fa-whatsapp fa-btn-icon"></i> Enviar Encomenda via WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Biblioteca local jsPDF (não CDN, conforme exigência) -->
+  <script src="/lib/jspdf.umd.min.js"></script>
+  
+  <!-- Scripts Modulares -->
+  <script type="module" src="/js/pwa.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/configurador.js"></script>
+  <script type="module" src="/js/paginas.js"></script>
+</body>
+</html>

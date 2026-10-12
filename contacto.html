@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canais de Contacto & Localização | JOGATINAL Matola</title>
+  <meta name="description" content="Entra em contacto com a equipa da JOGATINAL na Matola e Maputo via WhatsApp, email ou visita a nossa arena presencial." />
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+  
+  <!-- CSS Modular por responsabilidade -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/paginas.css" />
+</head>
+<body>
+
+  <!-- Header Sticky (3 Zonas) -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="JOGATINAL - Página Inicial">
+        <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+        <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links-desktop" role="navigation" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="torneios.html" class="nav-link">Torneios & Desafios</a>
+        <a href="loja.html" class="nav-link">Loja & Consolas</a>
+        <a href="jogos.html" class="nav-link">Jogos no HD</a>
+        <a href="vender.html" class="nav-link">Vender / Retoma</a>
+        <a href="sobre.html" class="nav-link">Quem Somos</a>
+        <a href="contacto.html" class="nav-link ativo" aria-current="page">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="loja.html" class="btn btn-sm btn-verde btn-header-cta">
+          <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Loja
+        </a>
+
+        <button id="btn-menu-toggle" class="btn-menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span id="icone-hamburger"><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile -->
+  <div id="mobile-menu-drawer" class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html"><i class="fa-solid fa-house fa-btn-icon"></i> Início</a></li>
+      <li class="mobile-nav-item"><a href="torneios.html"><i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios & Desafios</a></li>
+      <li class="mobile-nav-item"><a href="loja.html"><i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Loja (Consolas, Joy's & CD's)</a></li>
+      <li class="mobile-nav-item"><a href="jogos.html"><i class="fa-solid fa-hard-drive fa-btn-icon"></i> Montar Jogos no HD</a></li>
+      <li class="mobile-nav-item"><a href="vender.html"><i class="fa-solid fa-hand-holding-dollar fa-btn-icon"></i> Vender / Retoma de Usados</a></li>
+      <li class="mobile-nav-item"><a href="sobre.html"><i class="fa-solid fa-building fa-btn-icon"></i> Quem Somos & Garantias</a></li>
+      <li class="mobile-nav-item"><a href="contacto.html" class="ativo"><i class="fa-solid fa-location-dot fa-btn-icon"></i> Contacto</a></li>
+      <li class="mobile-nav-item"><a href="faq.html"><i class="fa-solid fa-circle-question fa-btn-icon"></i> Perguntas Frequentes</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="jogos.html" class="btn btn-verde btn-block">
+        <i class="fa-solid fa-hard-drive fa-btn-icon"></i> Montar Pack de Jogos
+      </a>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+    <section class="section-hero">
+      <div class="content-container">
+        <div style="max-width: 800px;">
+          <span class="hero-kicker">Atendimento Directo · Matola & Maputo</span>
+          <h1 class="display-1" style="margin-top: 6px; margin-bottom: var(--espaco-sm);">
+            FALA COM A EQUIPA JOGATINAL
+          </h1>
+          <p class="hero-subtitle">
+            Estamos disponíveis para agendar a instalação de jogos na tua casa, tirar dúvidas sobre formatos de torneio ou preparar o teu novo HD externo com total segurança.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid de 4 Cards Preenchidos Dinamicamente via config.json -->
+    <section class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Canais Disponíveis</span>
+            <h2 class="display-2">Contactos Oficiais</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Carregados diretamente da nossa base de dados oficial</span>
+        </div>
+
+        <div id="container-contactos-cards" class="grid-contactos">
+          <!-- Injetado dinamicamente via paginas.js e config.json -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulário de Mensagem Direta & CTA Final -->
+    <section class="section-bloco" style="background-color: var(--cor-superficie);">
+      <div class="content-container">
+        <div style="max-width: 680px; margin: 0 auto;">
+          <div style="text-align: center; margin-bottom: var(--espaco-xl);">
+            <span class="section-kicker">Envio Rápido</span>
+            <h3 class="display-2" style="margin-top: 6px;">Envia-nos uma Mensagem</h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave);">
+              Respondemos habitualmente em menos de 15 minutos durante o horário comercial.
+            </p>
+          </div>
+
+          <form id="form-mensagem-contacto" class="card" style="padding: var(--espaco-xl);">
+            <div class="grid-campos-duplos">
+              <div class="form-group">
+                <label for="msg-nome" class="form-label">O teu Nome *</label>
+                <input type="text" id="msg-nome" class="form-control" placeholder="Ex: Celso Sitoe" required />
+              </div>
+              <div class="form-group">
+                <label for="msg-whatsapp" class="form-label">WhatsApp ou Telemóvel *</label>
+                <input type="tel" id="msg-whatsapp" class="form-control" placeholder="Ex: 85 339 0327" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="msg-assunto" class="form-label">Motivo do Contacto</label>
+              <select id="msg-assunto" class="form-control">
+                <option value="duvida_jogos">Dúvida sobre Instalação de Jogos em HD</option>
+                <option value="inscricao_torneio">Questões sobre Inscrição em Torneio</option>
+                <option value="deslocacao">Agendamento de Deslocação ao Domicílio</option>
+                <option value="parceria">Patrocínio ou Parceria Comercial</option>
+                <option value="outro">Outro Assunto</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="msg-texto" class="form-label">Mensagem *</label>
+              <textarea id="msg-texto" class="form-control" rows="4" placeholder="Escreve aqui a tua questão ou pedido..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-verde btn-block" style="margin-top: var(--espaco-md);">
+              <i class="fa-solid fa-paper-plane fa-btn-icon"></i> Enviar Mensagem
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer em 4 colunas -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="content-container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="site-brand" style="margin-bottom: var(--espaco-md);">
+            <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+            <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+          </a>
+          <p style="font-size: var(--tipo-pequeno);">Plataforma de futebol virtual e videojogos na Matola e Maputo.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Início</a></li>
+            <li><a href="torneios.html" class="footer-link">Torneios</a></li>
+            <li><a href="jogos.html" class="footer-link">Configurar Jogos</a></li>
+            <li><a href="ranking.html" class="footer-link">Ranking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Institucional</h4>
+          <ul class="footer-links-list">
+            <li><a href="regulamento.html" class="footer-link">Regulamento dos Torneios</a></li>
+            <li><a href="sobre.html" class="footer-link">Quem Somos</a></li>
+            <li><a href="contacto.html" class="footer-link">Contactos</a></li>
+            <li><a href="faq.html" class="footer-link">Perguntas Frequentes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contacto</h4>
+          <p style="font-size: var(--tipo-pequeno);">WhatsApp & Chamadas: <a href="tel:+258853390327" style="color: inherit; text-decoration: underline;">+258 85 339 0327</a><br />Email: contacto@jogatinal.mz</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; <span id="ano-corrente">2026</span> JOGATINAL. Todos os direitos reservados.</span>
+        <span>Matola Muhalaze / Ngolhoza, Província de Maputo, Moçambique.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/paginas.js"></script>
+</body>
+</html>

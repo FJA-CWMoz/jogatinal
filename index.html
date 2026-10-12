@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOGATINAL | Venda & Compra de Consolas, Joy's e CD's com Jogos Matola</title>
+  <meta name="description" content="A maior loja de videojogos em Matola Muhalaze / Ngolhoza. Venda e compra de consolas PS5, PS4 e PS3, comandos (Joy's) originais, CD's de jogos e instalação de jogos em HDs." />
+  <meta name="theme-color" content="#0a0c12" />
+  
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+  <link rel="manifest" href="/manifest.json" />
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css" />
+  
+  <!-- CSS Modular por responsabilidade -->
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/variables.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/layout.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/paginas.css" />
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header Sticky (3 Zonas)
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-container">
+      <!-- Zona 1: Logótipo / Marca -->
+      <a href="index.html" class="site-brand" aria-label="JOGATINAL - Página Inicial">
+        <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+        <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Zona 2: Navegação Principal Desktop -->
+      <nav class="nav-links-desktop" role="navigation" aria-label="Navegação Principal">
+        <a href="index.html" class="nav-link ativo" aria-current="page">Início</a>
+        <a href="torneios.html" class="nav-link">Torneios & Desafios</a>
+        <a href="loja.html" class="nav-link">Loja & Consolas</a>
+        <a href="jogos.html" class="nav-link">Jogos no HD</a>
+        <a href="vender.html" class="nav-link">Vender / Retoma</a>
+        <a href="sobre.html" class="nav-link">Quem Somos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+      </nav>
+
+      <!-- Zona 3: Ação Primária & Menu Hamburger Mobile -->
+      <div class="header-actions">
+        <a href="torneios.html" class="btn btn-sm btn-outline btn-header-cta">
+          <i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios
+        </a>
+        <a href="loja.html" class="btn btn-sm btn-verde btn-header-cta">
+          <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Loja
+        </a>
+
+        <button id="btn-menu-toggle" class="btn-menu-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false" aria-controls="mobile-menu-drawer">
+          <span id="icone-hamburger"><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gaveta de Menu Mobile -->
+  <div id="mobile-menu-drawer" class="mobile-menu-drawer" role="dialog" aria-modal="true" aria-label="Menu Mobile">
+    <ul class="mobile-nav-list">
+      <li class="mobile-nav-item"><a href="index.html" class="ativo"><i class="fa-solid fa-house fa-btn-icon"></i> Início</a></li>
+      <li class="mobile-nav-item"><a href="torneios.html"><i class="fa-solid fa-trophy fa-btn-icon"></i> Torneios & Desafios 1v1</a></li>
+      <li class="mobile-nav-item"><a href="loja.html"><i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Loja (Consolas, Joy's & CD's)</a></li>
+      <li class="mobile-nav-item"><a href="jogos.html"><i class="fa-solid fa-hard-drive fa-btn-icon"></i> Montar Jogos no HD</a></li>
+      <li class="mobile-nav-item"><a href="vender.html"><i class="fa-solid fa-hand-holding-dollar fa-btn-icon"></i> Vender / Retoma de Usados</a></li>
+      <li class="mobile-nav-item"><a href="sobre.html"><i class="fa-solid fa-building fa-btn-icon"></i> Quem Somos & Garantias</a></li>
+      <li class="mobile-nav-item"><a href="contacto.html"><i class="fa-solid fa-location-dot fa-btn-icon"></i> Localização & Contacto</a></li>
+      <li class="mobile-nav-item"><a href="faq.html"><i class="fa-solid fa-circle-question fa-btn-icon"></i> Perguntas Frequentes (FAQ)</a></li>
+    </ul>
+
+    <div class="mobile-nav-footer">
+      <a href="vender.html" class="btn btn-outline btn-block" style="margin-bottom: var(--espaco-xs);">
+        <i class="fa-solid fa-calculator fa-btn-icon"></i> Quero Vender Consola / Joy
+      </a>
+      <a href="loja.html" class="btn btn-verde btn-block">
+        <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Todos os Artigos à Venda
+      </a>
+      <p class="texto-muted" style="text-align: center; font-size: var(--tipo-micro); margin-top: 6px;">
+        Matola Muhalaze / Ngolhoza · Cidade da Matola
+      </p>
+    </div>
+  </div>
+
+  <main id="conteudo-principal">
+    <!-- ==========================================================================
+         Hero Section: Loja de Consolas, Joy's, CD's e Instalação em HD
+         ========================================================================== -->
+    <section class="section-hero">
+      <div class="content-container">
+        <!-- Ticker Live Arena & Stock Gamer -->
+        <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 229, 117, 0.1); border: 1px solid rgba(0, 229, 117, 0.3); border-radius: var(--raio-full); padding: 5px 14px; margin-bottom: var(--espaco-md); font-size: var(--tipo-pequeno); color: var(--cor-texto-principal); box-shadow: 0 0 16px rgba(0, 229, 117, 0.15);">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background-color: var(--cor-verde-marca); box-shadow: 0 0 10px var(--cor-verde-marca); animation: pulse 2s infinite;"></span>
+          <strong style="color: var(--cor-verde-marca); font-family: var(--fonte-gamer, sans-serif); letter-spacing: 0.5px; text-transform: uppercase;">Arena & Loja Gamer</strong>
+          <span class="metadados-separador">·</span>
+          <span>Matola Muhalaze / Ngolhoza</span>
+          <span class="metadados-separador">·</span>
+          <span style="color: var(--cor-dourado);"><i class="fa-solid fa-bolt"></i> Compra e Venda com M-Pesa na Hora</span>
+        </div>
+
+        <div class="hero-grid">
+          <!-- Coluna de Texto Principal Gamer -->
+          <div class="hero-content">
+            <h1 class="hero-title" style="letter-spacing: 0.5px; text-shadow: 0 4px 20px rgba(0,0,0,0.8);">
+              CONSOLAS, JOY'S <br />
+              <span style="color: var(--cor-verde-marca); text-shadow: 0 0 25px rgba(0, 229, 117, 0.4);">& CD'S COM JOGOS</span>
+            </h1>
+
+            <p class="hero-subtitle" style="font-size: clamp(1rem, 1.1vw + 0.5rem, 1.15rem); color: var(--cor-texto-suave); line-height: 1.6;">
+              O epicentro dos videojogos na Matola! Vendemos e compramos <strong>PlayStation 5, PS4, PS3</strong>, comandos (Joy's) originais lacrados ou revisados e CD's físicos. Pagamos na hora via M-Pesa pelo teu videogame usado e gravamos packs de jogos em HDs sem gastares a tua internet!
+            </p>
+
+            <!-- Badges de Plataformas Gamer Suportadas -->
+            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: var(--espaco-xs);">
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(0, 112, 209, 0.18); border: 1px solid rgba(0, 112, 209, 0.4); color: #64b5f6; padding: 4px 10px; border-radius: var(--raio-sm); font-size: 0.8rem; font-weight: 700;">
+                <i class="fa-brands fa-playstation"></i> PS5 SLIM
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(0, 112, 209, 0.18); border: 1px solid rgba(0, 112, 209, 0.4); color: #64b5f6; padding: 4px 10px; border-radius: var(--raio-sm); font-size: 0.8rem; font-weight: 700;">
+                <i class="fa-brands fa-playstation"></i> PS4 PRO / SLIM
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(0, 229, 117, 0.12); border: 1px solid rgba(0, 229, 117, 0.35); color: var(--cor-verde-hover); padding: 4px 10px; border-radius: var(--raio-sm); font-size: 0.8rem; font-weight: 700;">
+                <i class="fa-solid fa-gamepad"></i> DUALSENSE & JOY'S
+              </span>
+              <span style="display: inline-flex; align-items: center; gap: 5px; background: rgba(255, 184, 0, 0.12); border: 1px solid rgba(255, 184, 0, 0.35); color: var(--cor-dourado); padding: 4px 10px; border-radius: var(--raio-sm); font-size: 0.8rem; font-weight: 700;">
+                <i class="fa-solid fa-hard-drive"></i> PACKS NO HD
+              </span>
+            </div>
+
+            <div class="hero-actions-group">
+              <a href="loja.html" class="btn btn-verde" style="font-size: 0.95rem; padding: 0.75rem 1.4rem;">
+                <i class="fa-solid fa-bag-shopping fa-btn-icon"></i> Ver Consolas & CD's à Venda
+              </a>
+              <a href="vender.html" class="btn btn-dourado" style="font-size: 0.95rem; padding: 0.75rem 1.4rem;">
+                <i class="fa-solid fa-hand-holding-dollar fa-btn-icon"></i> Vender ou Trocar Usados
+              </a>
+              <a href="jogos.html" class="btn btn-secundario" style="font-size: 0.95rem; padding: 0.75rem 1.4rem;">
+                <i class="fa-solid fa-hard-drive fa-btn-icon"></i> Gravar Jogos no HD
+              </a>
+            </div>
+
+            <div class="metadados-linha" style="margin-top: var(--espaco-sm);">
+              <span><i class="fa-solid fa-shield-halved fa-verde"></i> Garantia de 30 a 90 Dias</span>
+              <span class="metadados-separador">·</span>
+              <span><i class="fa-solid fa-bolt fa-dourado"></i> M-Pesa na Hora sem Burocracia</span>
+              <span class="metadados-separador">·</span>
+              <span><i class="fa-solid fa-motorcycle fa-verde"></i> Entregas em Matola & Maputo</span>
+            </div>
+          </div>
+
+          <!-- Card Lateral de Compra / Vitrine com Imagem de Hardware -->
+          <aside class="card-premio-lateral" aria-label="Compramos a tua Consola ou Jogos">
+            <div style="position: relative; width: 100%; height: 160px; border-radius: var(--raio-md); overflow: hidden; margin-bottom: var(--espaco-md); border: 1px solid var(--cor-borda);">
+              <img src="/assets/images/consolas_vitrine_1790917264658.jpg" alt="Consolas PlayStation e comandos na vitrine JOGATINAL Matola" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(10,12,18,0.85) 100%);"></div>
+              <span class="badge-estado destaque" style="position: absolute; top: 10px; left: 10px; background: rgba(0, 0, 0, 0.85); border: 1px solid var(--cor-dourado);">
+                <i class="fa-solid fa-money-bill-wave fa-dourado"></i> Compramos na Hora
+              </span>
+              <span style="position: absolute; bottom: 10px; right: 10px; font-size: var(--tipo-micro); color: #ffffff; background: rgba(0, 112, 209, 0.85); padding: 2px 8px; border-radius: 4px; font-weight: 700;">
+                M-Pesa Imediato
+              </span>
+            </div>
+
+            <h2 style="font-family: var(--fonte-subtitulos); font-size: 1.25rem; font-weight: 900; margin-bottom: var(--espaco-xs); text-transform: uppercase;">
+              Tens Consola ou Joy Parado?
+            </h2>
+
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); margin-bottom: var(--espaco-md);">
+              Transforma o teu equipamento antigo em dinheiro imediato no teu M-Pesa ou dá como entrada para uma PS5 novinha!
+            </p>
+
+            <div style="background-color: rgba(10, 12, 18, 0.8); border: 1px solid var(--cor-borda); border-radius: var(--raio-md); padding: 0.75rem; margin-bottom: var(--espaco-md); width: 100%; box-sizing: border-box;">
+              <span class="texto-muted" style="font-size: var(--tipo-micro); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px;">
+                Tabela Média de Compra
+              </span>
+              <div style="display: flex; flex-direction: column; gap: 6px; font-size: var(--tipo-pequeno);">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--cor-borda); padding-bottom: 4px;">
+                  <span>PlayStation 5:</span>
+                  <strong style="color: var(--cor-dourado);">Até 30.000 MT</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--cor-borda); padding-bottom: 4px;">
+                  <span>PlayStation 4 Slim / Pro:</span>
+                  <strong style="color: var(--cor-dourado);">Até 16.500 MT</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px; border-bottom: 1px solid var(--cor-borda); padding-bottom: 4px;">
+                  <span>Joy's DualSense / DualShock:</span>
+                  <strong style="color: var(--cor-dourado);">Até 2.800 MT</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 4px;">
+                  <span>CD's de Jogos Lançamento:</span>
+                  <strong style="color: var(--cor-dourado);">Até 2.500 MT</strong>
+                </div>
+              </div>
+            </div>
+
+            <a href="vender.html" class="btn btn-dourado btn-block">
+              Simular Avaliação do Meu Artigo <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Secção 1: Vitrine de Artigos em Destaque (Consolas, Joy's & CD's)
+         ========================================================================== -->
+    <section class="section-bloco">
+      <div class="content-container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Em Stock na Loja</span>
+            <h2 class="display-2">Destaques da Semana</h2>
+          </div>
+          <a href="loja.html" class="btn btn-sm btn-outline">
+            Ver Todos os Artigos à Venda <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i>
+          </a>
+        </div>
+
+        <div id="container-vitrine-home" class="grid-torneios">
+          <!-- Preenchido dinamicamente via loja.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Secção 2: Torneios & Desafios Presenciais na Arena
+         ========================================================================== -->
+    <section class="section-bloco" style="border-top: 1px solid var(--cor-borda);">
+      <div class="content-container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Arena Presencial Matola Muhalaze / Ngolhoza</span>
+            <h2 class="display-2">Torneios & Desafios de Fim de Semana</h2>
+          </div>
+          <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+            <a href="torneios.html#seccao-torneios-historico" class="btn btn-sm btn-outline">
+              <i class="fa-solid fa-clock-rotate-left fa-btn-icon"></i> O Que Já Aconteceu
+            </a>
+            <a href="https://www.youtube.com/@JOGATINAL-MZ" target="_blank" rel="noopener noreferrer" class="btn btn-sm" style="background: rgba(255,0,0,0.15); border: 1px solid rgba(255,0,0,0.4); color: #ff4d4d; font-weight: 700;">
+              <i class="fa-brands fa-youtube fa-btn-icon"></i> Canal YouTube
+            </a>
+            <a href="torneios.html" class="btn btn-sm btn-verde">
+              Ver Todos os Torneios <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <div id="container-torneios-home" class="grid-torneios">
+          <!-- Preenchido dinamicamente via torneios.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Secção 3: Os Quatro Serviços Centrais da JOGATINAL
+         ========================================================================== -->
+    <section class="section-bloco" style="background-color: var(--cor-superficie); border-top: 1px solid var(--cor-borda); border-bottom: 1px solid var(--cor-borda);">
+      <div class="content-container">
+        <div class="section-header-row" style="text-align: center; justify-content: center; margin-bottom: var(--espaco-lg);">
+          <div>
+            <span class="section-kicker">O Teu Ponto de Referência Gamer</span>
+            <h2 class="display-2">Tudo o Que Precisas para Jogar</h2>
+          </div>
+        </div>
+
+        <div class="grid-recursos">
+          <!-- Pilar 1: Consolas -->
+          <div class="card">
+            <div class="fa-card-icon" style="color: var(--cor-verde-marca);"><i class="fa-solid fa-tv"></i></div>
+            <h3 class="subtitulo-archivo" style="margin-bottom: 6px; font-size: 1.15rem;">Venda de Consolas</h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); line-height: 1.5; margin-bottom: var(--espaco-md);">
+              PlayStation 5 Slim, PS4 Pro e PS4 Slim novas ou semi-novas 100% higienizadas, com massa térmica renovada e garantia até 90 dias.
+            </p>
+            <a href="loja.html" class="btn btn-sm btn-outline">Ver Consolas <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+          </div>
+
+          <!-- Pilar 2: Joy's / Comandos -->
+          <div class="card" style="padding: var(--espaco-lg);">
+            <div class="fa-card-icon" style="color: var(--cor-dourado);"><i class="fa-solid fa-gamepad"></i></div>
+            <h3 class="subtitulo-archivo" style="margin-bottom: 6px; font-size: 1.15rem;">Joy's & Comandos</h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); line-height: 1.5; margin-bottom: var(--espaco-md);">
+              DualSense PS5 e DualShock 4 originais novos ou semi-novos testados em bancada. Sem drift nos analógicos e com máxima autonomia de bateria.
+            </p>
+            <a href="loja.html" class="btn btn-sm btn-outline">Ver Comandos <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+          </div>
+
+          <!-- Pilar 3: CD's com Jogos -->
+          <div class="card" style="padding: var(--espaco-lg);">
+            <div class="fa-card-icon" style="color: var(--cor-verde-hover);"><i class="fa-solid fa-compact-disc"></i></div>
+            <h3 class="subtitulo-archivo" style="margin-bottom: 6px; font-size: 1.15rem;">CD's Físicos & Troca</h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); line-height: 1.5; margin-bottom: var(--espaco-md);">
+              Mídia física original com caixa (FC 25, GTA V, Spider-Man 2, God of War). Compramos o teu CD antigo ou aceitamos troca com acréscimo justo.
+            </p>
+            <a href="loja.html" class="btn btn-sm btn-outline">Ver Jogos em CD <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+          </div>
+
+          <!-- Pilar 4: Gravação em HD -->
+          <div class="card card-premio" style="padding: var(--espaco-lg);">
+            <div class="fa-card-icon" style="color: var(--cor-dourado);"><i class="fa-solid fa-hard-drive"></i></div>
+            <h3 class="subtitulo-archivo" style="margin-bottom: 6px; font-size: 1.15rem; color: var(--cor-verde-hover);">Gravação de Jogos em HD</h3>
+            <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave); line-height: 1.5; margin-bottom: var(--espaco-md);">
+              Configurador inteligente com mais de 500GB de jogos digitais. Enchemos o teu disco sem gastares internet nem saldo de dados em casa.
+            </p>
+            <a href="jogos.html" class="btn btn-sm btn-verde">Montar Pack no HD <i class="fa-solid fa-arrow-right" style="margin-left: 4px;"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Secção 3: Simulador Rápido de Venda / Retoma
+         ========================================================================== -->
+    <section class="section-bloco">
+      <div class="content-container">
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--espaco-xl); align-items: center;" class="cta-banner-grid">
+          <div>
+            <span class="section-kicker">Dinheiro no Teu Bolso na Hora</span>
+            <h2 class="display-2" style="margin-top: 6px;">
+              Queres Vender a Tua Consola, Joy ou CD Usado?
+            </h2>
+            <p style="font-size: var(--tipo-corpo); margin: var(--espaco-md) 0;">
+              Não deixes o teu material parado a desvalorizar. A JOGATINAL avalia na hora e paga imediatamente em <strong>M-Pesa, e-Mola ou Numerário</strong> na nossa loja em Matola Muhalaze / Ngolhoza. Também aceitamos o teu artigo antigo para abater no preço de um novo!
+            </p>
+
+            <div style="display: flex; gap: var(--espaco-sm); flex-wrap: wrap; margin-top: var(--espaco-md);">
+              <a href="vender.html" class="btn btn-dourado">
+                <i class="fa-solid fa-calculator fa-btn-icon"></i> Fazer Avaliação no Simulador
+              </a>
+              <a href="https://wa.me/258853390327?text=Olá JOGATINAL! Gostaria de vender uma consola/comando/CD..." target="_blank" rel="noopener noreferrer" class="btn btn-verde">
+                <i class="fa-brands fa-whatsapp fa-btn-icon"></i> Falar Direto no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="padding: var(--espaco-xl); background-color: var(--cor-superficie-elevada); border: 1px solid var(--cor-borda);">
+            <h3 class="subtitulo-archivo" style="margin-bottom: var(--espaco-md); font-size: 1.25rem;">
+              O Que Aceitamos para Compra & Retoma:
+            </h3>
+            <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: var(--espaco-sm); font-size: var(--tipo-pequeno);">
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--cor-verde-marca); font-weight: 700;"><i class="fa-solid fa-check"></i></span>
+                <span><strong>Consolas:</strong> PS5 (Leitor e Digital), PS4 (Slim, Pro, Fat), PS3 (Super Slim e Slim), PS2 e Xbox.</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--cor-verde-marca); font-weight: 700;"><i class="fa-solid fa-check"></i></span>
+                <span><strong>Joy's / Comandos:</strong> DualSense originais, DualShock 4 e comandos de PS3 (mesmo com analógico desgastado ou drift).</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--cor-verde-marca); font-weight: 700;"><i class="fa-solid fa-check"></i></span>
+                <span><strong>CD's de Jogos:</strong> Mídia física de PS5 e PS4 com caixa e disco funcional sem danos graves.</span>
+              </li>
+              <li style="display: flex; gap: 8px; align-items: flex-start;">
+                <span style="color: var(--cor-verde-marca); font-weight: 700;"><i class="fa-solid fa-check"></i></span>
+                <span><strong>Acessórios:</strong> Discos rígidos (HDs), cabos HDMI 2.1, estações de carregamento e suportes.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Secção 4: Galeria da Loja & Oficina Técnica em Matola Muhalaze / Ngolhoza
+         ========================================================================== -->
+    <section class="section-bloco" style="background-color: var(--cor-fundo-secundario);">
+      <div class="content-container">
+        <div class="section-header-row">
+          <div>
+            <span class="section-kicker">Loja & Oficina Técnica</span>
+            <h2 class="display-2">Equipamento Real & Bancada de Testes</h2>
+          </div>
+          <span class="texto-muted" style="font-size: var(--tipo-pequeno);">Matola Muhalaze / Ngolhoza · Maputo</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr; gap: var(--espaco-md);" class="grid-torneios">
+          <!-- Foto 1 -->
+          <div class="card" style="padding: var(--espaco-sm); overflow: hidden;">
+            <div style="width: 100%; height: 180px; border-radius: var(--raio-md); overflow: hidden; background-color: var(--cor-fundo-secundario);">
+              <img src="/src/assets/images/consolas_vitrine_1790917264658.jpg" alt="Consolas PlayStation em Exposição" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div style="padding: var(--espaco-sm) var(--espaco-xs);">
+              <h4 style="font-size: 1rem; color: var(--cor-texto-principal); margin-bottom: 2px;">Consolas PS5 & PS4</h4>
+              <p style="font-size: var(--tipo-micro); color: var(--cor-texto-suave); margin: 0;">Aparelhos selados ou semi-novos testados com garantia de 30 a 90 dias.</p>
+            </div>
+          </div>
+
+          <!-- Foto 2 -->
+          <div class="card" style="padding: var(--espaco-sm); overflow: hidden;">
+            <div style="width: 100%; height: 180px; border-radius: var(--raio-md); overflow: hidden; background-color: var(--cor-fundo-secundario);">
+              <img src="/src/assets/images/joysticks_display_1790917278138.jpg" alt="Comandos DualSense e DualShock" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div style="padding: var(--espaco-sm) var(--espaco-xs);">
+              <h4 style="font-size: 1rem; color: var(--cor-dourado); margin-bottom: 2px;">Joy's / Comandos Originais</h4>
+              <p style="font-size: var(--tipo-micro); color: var(--cor-texto-suave); margin: 0;">Analógicos testados contra drift e baterias de longa duração.</p>
+            </div>
+          </div>
+
+          <!-- Foto 3 -->
+          <div class="card" style="padding: var(--espaco-sm); overflow: hidden;">
+            <div style="width: 100%; height: 180px; border-radius: var(--raio-md); overflow: hidden; background-color: var(--cor-fundo-secundario);">
+              <img src="/src/assets/images/cds_games_cases_1790917298072.jpg" alt="CDs de Jogos Físicos de PlayStation" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+            </div>
+            <div style="padding: var(--espaco-sm) var(--espaco-xs);">
+              <h4 style="font-size: 1rem; color: var(--cor-texto-principal); margin-bottom: 2px;">CD's Originais com Caixa</h4>
+              <p style="font-size: var(--tipo-micro); color: var(--cor-texto-suave); margin: 0;">Mídia física testada para leitura imediata na consola.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão Flutuante de WhatsApp Mobile -->
+  <a href="https://wa.me/258853390327" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-flutuante" aria-label="Conversar no WhatsApp com a JOGATINAL" title="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- ==========================================================================
+       Footer em 4 Colunas
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <!-- Coluna 1: Marca & Endereço -->
+        <div>
+          <a href="index.html" class="site-brand" style="margin-bottom: var(--espaco-md);">
+            <img src="/assets/favicon.svg" alt="Logótipo JOGATINAL" class="brand-logo-icon" />
+            <span class="brand-title">JOGATINAL<span class="brand-dot">.</span></span>
+          </a>
+          <p style="font-size: var(--tipo-pequeno); line-height: 1.6;">
+            A maior loja de compra e venda de consolas, comandos e CD's de jogos, além de gravação e configuração profissional de discos em Matola Muhalaze / Ngolhoza.
+          </p>
+          <div class="metadados-linha" style="margin-top: var(--espaco-md);">
+            <span><i class="fa-solid fa-location-dot fa-verde fa-btn-icon"></i> Matola Muhalaze / Ngolhoza</span>
+            <span class="metadados-separador">·</span>
+            <span>Maputo</span>
+          </div>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div>
+          <h4 class="footer-col-title">Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Página Inicial</a></li>
+            <li><a href="loja.html" class="footer-link">Loja (Consolas, Joy's & CD's)</a></li>
+            <li><a href="jogos.html" class="footer-link">Configurador de Jogos em HD</a></li>
+            <li><a href="vender.html" class="footer-link">Vender / Retoma de Usados</a></li>
+            <li><a href="sobre.html" class="footer-link">Quem Somos & Garantias</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Institucional -->
+        <div>
+          <h4 class="footer-col-title">Institucional</h4>
+          <ul class="footer-links-list">
+            <li><a href="sobre.html" class="footer-link">Termos de Garantia</a></li>
+            <li><a href="contacto.html" class="footer-link">Localização da Loja</a></li>
+            <li><a href="faq.html" class="footer-link">Perguntas Frequentes (FAQ)</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 4: Contacto Rápido & Pagamentos -->
+        <div>
+          <h4 class="footer-col-title">Atendimento</h4>
+          <p style="font-size: var(--tipo-pequeno); margin-bottom: var(--espaco-sm);">
+            <strong>WhatsApp & Chamadas:</strong> <a href="tel:+258853390327" style="color: inherit; text-decoration: underline;">+258 85 339 0327</a><br />
+            <strong>Email:</strong> contacto@jogatinal.mz
+          </p>
+          <p style="font-size: var(--tipo-pequeno); color: var(--cor-texto-suave);">
+            Segunda a Sábado: 08h00 - 19h00
+          </p>
+          <div style="margin-top: var(--espaco-md); display: flex; gap: var(--espaco-xs); flex-wrap: wrap;">
+            <a href="https://www.youtube.com/@JOGATINAL-MZ" target="_blank" rel="noopener noreferrer" class="badge-estado" style="background: rgba(255,0,0,0.2); color: #ff4d4d; border: 1px solid rgba(255,0,0,0.4); text-decoration: none;">
+              <i class="fa-brands fa-youtube"></i> YouTube @JOGATINAL-MZ
+            </a>
+            <span class="badge-estado aberto">M-Pesa</span>
+            <span class="badge-estado aberto">e-Mola</span>
+            <span class="badge-estado aberto">BIM</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de copyright inferior -->
+      <div class="footer-bottom-bar">
+        <span>&copy; <span id="ano-corrente">2026</span> JOGATINAL. Todos os direitos reservados.</span>
+        <span>Matola Muhalaze / Ngolhoza, Província de Maputo, Moçambique.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Modulares -->
+  <script type="module" src="/js/pwa.js"></script>
+  <script type="module" src="/js/menu.js"></script>
+  <script type="module" src="/js/loja.js"></script>
+  <script type="module" src="/js/torneios.js"></script>
+  <script type="module" src="/js/paginas.js"></script>
+</body>
+</html>

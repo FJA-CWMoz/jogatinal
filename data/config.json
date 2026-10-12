@@ -1,0 +1,72 @@
+{
+  "negocio": {
+    "nome": "JOGATINAL",
+    "slogan": "Futebol Virtual & Jogos Digitais em Matola",
+    "descricao": "A maior plataforma de torneios presenciais de futebol virtual e instalação profissional de jogos digitais em HDs na Matola e Maputo.",
+    "whatsapp": "258853390327",
+    "whatsappFormatado": "+258 85 339 0327",
+    "telefone": "853390327",
+    "telefoneFormatado": "+258 85 339 0327",
+    "email": "contacto@jogatinal.mz",
+    "localizacao": "Matola Muhalaze / Ngolhoza, Cidade da Matola, Província de Maputo, Moçambique",
+    "horario": "Segunda a Sábado: 08h00 às 19h00 | Domingo: Em dias de Torneio",
+    "youtube": "https://www.youtube.com/@JOGATINAL-MZ",
+    "youtubeNome": "@JOGATINAL-MZ",
+    "metodosPagamento": ["M-Pesa", "e-Mola", "Transferência Bancária / BIM", "Numerário na Entrega"]
+  },
+  "taxas": {
+    "preparacao": 250
+  },
+  "modos": [
+    {
+      "id": "meu_hd",
+      "letra": "A",
+      "nome": "Trago o meu HD",
+      "subtitulo": "Trago o meu disco rígido e venho buscar só os jogos instalados",
+      "requerHD": false,
+      "requerZona": false,
+      "taxaExtra": 0,
+      "icone": "hard-drive"
+    },
+    {
+      "id": "comprar_hd",
+      "letra": "B",
+      "nome": "Compro HD + jogos",
+      "subtitulo": "Escolho um HD novo na loja e já levo cheio com os jogos pretendidos",
+      "requerHD": true,
+      "requerZona": false,
+      "taxaExtra": 0,
+      "icone": "shopping-bag"
+    },
+    {
+      "id": "deslocacao",
+      "letra": "C",
+      "nome": "Venham ao meu local",
+      "subtitulo": "Técnico desloca-se até à tua residência em Matola ou Maputo",
+      "requerHD": false,
+      "requerZona": true,
+      "taxaExtra": 0,
+      "icone": "map-pin"
+    },
+    {
+      "id": "hd_pronto",
+      "letra": "D",
+      "nome": "HD já com jogos",
+      "subtitulo": "HD novo preparado e testado previamente — chega, liga e joga logo",
+      "requerHD": true,
+      "requerZona": false,
+      "taxaExtra": 250,
+      "icone": "zap"
+    }
+  ],
+  "consolasSuportadas": [
+    { "id": "PS5", "nome": "PlayStation 5", "geracao": "Nova Geração", "disponivel": true },
+    { "id": "PS4", "nome": "PlayStation 4", "geracao": "Geração Atual", "disponivel": true },
+    { "id": "PS3", "nome": "PlayStation 3", "geracao": "Clássica", "disponivel": true },
+    { "id": "PS2", "nome": "PlayStation 2", "geracao": "Retro Lenda", "disponivel": true }
+  ],
+  "instalacao": {
+    "tempoPorGB": 0.12,
+    "tempoMinimo": 10
+  }
+}

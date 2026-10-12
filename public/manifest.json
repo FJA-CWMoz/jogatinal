@@ -1,0 +1,18 @@
+{
+  "name": "JOGATINAL - Torneios & Jogos Matola",
+  "short_name": "JOGATINAL",
+  "description": "Futebol virtual, torneios oficiais e jogos digitais em HDs na Matola e Maputo.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#14120f",
+  "theme_color": "#3fa86a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

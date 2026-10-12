@@ -1,0 +1,319 @@
+/* ==========================================================================
+   JOGATINAL - paginas.css
+   Estilos dedicados para Torneios, Ranking, Notícias, Regulamento, Sobre e Contacto
+   ========================================================================== */
+
+/* ==========================================================================
+   PÁGINA: RANKING / LEADERBOARD
+   ========================================================================== */
+
+.ranking-tabela-container {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  overflow: hidden;
+  box-shadow: var(--sombra-card);
+}
+
+.ranking-lista {
+  display: flex;
+  flex-direction: column;
+}
+
+.ranking-linha {
+  display: grid;
+  grid-template-columns: 38px 1fr auto;
+  align-items: center;
+  gap: var(--espaco-xs);
+  padding: 0.625rem 0.5rem;
+  border-bottom: 1px solid var(--cor-borda);
+  transition: background-color var(--transicao-rapida);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.ranking-linha:last-child {
+  border-bottom: none;
+}
+
+.ranking-linha:hover {
+  background-color: var(--cor-superficie-elevada);
+}
+
+@media (min-width: 480px) {
+  .ranking-linha {
+    grid-template-columns: 50px 1fr auto;
+    gap: var(--espaco-md);
+    padding: var(--espaco-md);
+  }
+}
+
+@media (min-width: 768px) {
+  .ranking-linha {
+    grid-template-columns: 60px 1.5fr 1fr 1fr auto;
+  }
+}
+
+.ranking-posicao {
+  font-family: var(--fonte-numeros);
+  font-size: 1.8rem;
+  color: var(--cor-texto-muted);
+  text-align: center;
+}
+
+/* Top 3 em Dourado, Prata e Bronze Gamer */
+.ranking-linha.top-1 .ranking-posicao {
+  color: var(--cor-dourado);
+  font-size: 2.2rem;
+  text-shadow: 0 0 12px rgba(255, 184, 0, 0.5);
+}
+
+.ranking-linha.top-1 {
+  background: linear-gradient(90deg, rgba(255, 184, 0, 0.12) 0%, rgba(22, 28, 43, 0.8) 100%);
+  border-left: 4px solid var(--cor-dourado);
+}
+
+.ranking-linha.top-2 .ranking-posicao {
+  color: #d1d5db;
+  text-shadow: 0 0 8px rgba(209, 213, 219, 0.4);
+}
+
+.ranking-linha.top-2 {
+  background: linear-gradient(90deg, rgba(209, 213, 219, 0.08) 0%, rgba(22, 28, 43, 0.8) 100%);
+  border-left: 4px solid #9ca3af;
+}
+
+.ranking-linha.top-3 .ranking-posicao {
+  color: #f59e0b;
+}
+
+.ranking-linha.top-3 {
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.08) 0%, rgba(22, 28, 43, 0.8) 100%);
+  border-left: 4px solid #d97706;
+}
+
+.ranking-jogador-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.ranking-jogador-nome {
+  font-family: var(--fonte-subtitulos);
+  font-size: clamp(0.9rem, 3vw, 1.05rem);
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.ranking-jogador-nick {
+  color: var(--cor-verde-marca);
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.ranking-pontos {
+  font-family: var(--fonte-numeros);
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  color: var(--cor-dourado);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   PÁGINA: REGULAMENTO (Max-width 720px, Blocos destacados)
+   ========================================================================== */
+
+.regulamento-wrapper {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.regulamento-artigo {
+  margin-bottom: var(--espaco-2xl);
+  padding-bottom: var(--espaco-xl);
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.regulamento-artigo:last-child {
+  border-bottom: none;
+}
+
+.regulamento-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  margin-bottom: var(--espaco-md);
+  display: flex;
+  align-items: center;
+  gap: var(--espaco-sm);
+}
+
+.bloco-destaque-info {
+  background-color: var(--cor-verde-fundo);
+  border-left: 4px solid var(--cor-verde-marca);
+  border-radius: var(--raio-md);
+  padding: var(--espaco-md);
+  margin: var(--espaco-md) 0;
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-principal);
+}
+
+.bloco-destaque-aviso {
+  background-color: var(--cor-dourado-fundo);
+  border-left: 4px solid var(--cor-dourado);
+  border-radius: var(--raio-md);
+  padding: var(--espaco-md);
+  margin: var(--espaco-md) 0;
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-principal);
+}
+
+/* ==========================================================================
+   PÁGINA: NOTÍCIAS & ARTIGOS
+   ========================================================================== */
+
+.noticia-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+  transition: transform var(--transicao-rapida), border-color var(--transicao-rapida);
+}
+
+.noticia-card:hover {
+  border-color: var(--cor-borda-suave);
+  transform: translateY(-2px);
+}
+
+.noticia-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  line-height: 1.25;
+}
+
+/* ==========================================================================
+   PÁGINA: CONTACTOS (Preenchido via JSON)
+   ========================================================================== */
+
+.grid-contactos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-md);
+}
+
+@media (min-width: 768px) {
+  .grid-contactos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espaco-lg);
+  }
+}
+
+.contacto-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+}
+
+.contacto-icone-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--raio-md);
+  background-color: var(--cor-verde-fundo);
+  border: 1px solid rgba(63, 168, 106, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-verde-hover);
+  margin-bottom: var(--espaco-xs);
+}
+
+.contacto-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+}
+
+.contacto-valor {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--cor-texto-principal);
+  word-break: break-word;
+}
+
+/* ==========================================================================
+   CARDS DE JOGOS COM DESAFIO NA ARENA (A a Z)
+   ========================================================================== */
+
+.jogo-desafio-card {
+  background-color: var(--cor-superficie);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  padding: var(--espaco-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--espaco-xs);
+  transition: all var(--transicao-rapida);
+  width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  position: relative;
+}
+
+.jogo-desafio-card:hover {
+  border-color: var(--cor-verde-marca);
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-card);
+}
+
+.jogo-desafio-nome {
+  font-family: var(--fonte-subtitulos);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+
+.jogo-desafio-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: var(--espaco-xs) 0;
+}
+
+.badge-desafio-tag {
+  font-size: var(--tipo-micro);
+  font-weight: 600;
+  color: var(--cor-dourado);
+  background-color: var(--cor-dourado-fundo);
+  border: 1px solid rgba(232, 184, 75, 0.25);
+  border-radius: var(--raio-sm);
+  padding: 2px 6px;
+}
+
+.badge-consola-tag {
+  font-size: var(--tipo-micro);
+  font-weight: 700;
+  color: var(--cor-verde-hover);
+  background-color: var(--cor-verde-fundo);
+  border: 1px solid rgba(63, 168, 106, 0.25);
+  border-radius: var(--raio-sm);
+  padding: 2px 6px;
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "pack_futebol",
+    "nome": "Pack Super Futebol",
+    "descontoPercent": 20,
+    "jogosIds": ["fc25", "fc24", "efootball2025", "pes2021"],
+    "minimoManter": 2,
+    "descricao": "O pacote definitivo dos estádios: do novo FC 25 à nostalgia perfeita do PES 2021 com eFootball grátis.",
+    "destaque": true
+  },
+  {
+    "id": "pack_acao",
+    "nome": "Pack Ação Explosiva",
+    "descontoPercent": 18,
+    "jogosIds": ["gtav", "spiderman", "gow_ragnarok"],
+    "minimoManter": 2,
+    "descricao": "As 3 maiores campanhas de mundo aberto e aventura da PlayStation juntas com poupança direta.",
+    "destaque": false
+  },
+  {
+    "id": "pack_familia",
+    "nome": "Pack Família & Amigos",
+    "descontoPercent": 15,
+    "jogosIds": ["minecraft", "fc25", "spiderman", "fortnite"],
+    "minimoManter": 2,
+    "descricao": "Diversão variada para toda a casa: futebol, construção criativa e ação de super-herói sem conflito de gostos.",
+    "destaque": false
+  },
+  {
+    "id": "pack_competitivo",
+    "nome": "Pack Mestre Competitivo",
+    "descontoPercent": 22,
+    "jogosIds": ["fc25", "tekken8", "cod_mw3", "efootball2025"],
+    "minimoManter": 3,
+    "descricao": "O arsenal dos campeões da JOGATINAL para treinar torneios de futebol, luta e tiro de alta precisão.",
+    "destaque": true
+  },
+  {
+    "id": "pack_top5",
+    "nome": "Pack Top 5 Mais Pedidos",
+    "descontoPercent": 20,
+    "jogosIds": ["fc25", "gtav", "gow_ragnarok", "rdr2", "spiderman"],
+    "minimoManter": 3,
+    "descricao": "A elite dos títulos mais solicitados pelos jogadores de Matola e Maputo reunidos com desconto de 20%.",
+    "destaque": false
+  },
+  {
+    "id": "pack_retro",
+    "nome": "Pack Clássicos & Lendas",
+    "descontoPercent": 18,
+    "jogosIds": ["pes2021", "gta_san_andreas", "minecraft"],
+    "minimoManter": 2,
+    "descricao": "Leves, viciantes e eternos. Funcionam brilhantemente em qualquer geração e poupam imenso espaço de disco.",
+    "destaque": false
+  }
+]

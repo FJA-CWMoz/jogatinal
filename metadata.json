@@ -1,0 +1,6 @@
+{
+  "name": "JOGATINAL - Torneios & Jogos Digitais Matola",
+  "description": "Plataforma moçambicana de torneios de futebol virtual e venda de jogos digitais em Matola e Maputo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

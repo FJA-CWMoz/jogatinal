@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Fundo Escudo Grafite -->
+  <path d="M32 4L54 12V32C54 45.2 44.6 57.3 32 60C19.4 57.3 10 45.2 10 32V12L32 4Z" fill="#1c1917" stroke="#3fa86a" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Linha Dourada interna de destaque -->
+  <path d="M32 9L49 15.5V31C49 41.5 41.8 51.2 32 54C22.2 51.2 15 41.5 15 31V15.5L32 9Z" stroke="#e8b84b" stroke-width="1.5" stroke-opacity="0.6"/>
+  <!-- Silhueta Gamepad + Bola de Futebol -->
+  <circle cx="32" cy="31" r="14" fill="#24201c" stroke="#3fa86a" stroke-width="2"/>
+  <!-- D-Pad Verde -->
+  <path d="M26 27V35M22 31H30" stroke="#3fa86a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Botões Dourados -->
+  <circle cx="38" cy="28" r="1.5" fill="#e8b84b"/>
+  <circle cx="41" cy="31" r="1.5" fill="#e8b84b"/>
+  <circle cx="38" cy="34" r="1.5" fill="#e8b84b"/>
+  <circle cx="35" cy="31" r="1.5" fill="#e8b84b"/>
+  <!-- Detalhe relva inferior -->
+  <path d="M24 43L32 39L40 43" stroke="#e8b84b" stroke-width="2" stroke-linecap="round"/>
+</svg>

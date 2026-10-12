@@ -1,0 +1,1569 @@
+[
+  {
+    "id": "assassins_creed_mirage",
+    "nome": "Assassin's Creed Mirage",
+    "genero": "Ação / Aventura",
+    "ano": 2023,
+    "preco": 300,
+    "descricao": "Regresso às origens do parkour e assassinatos furtivos na Bagdade do século IX com Basim.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 38,
+      "PS4": 35,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "acao",
+      "aventura",
+      "parkour",
+      "furtivo"
+    ]
+  },
+  {
+    "id": "astro_bot_ps5",
+    "nome": "Astro Bot",
+    "genero": "Plataforma / Aventura",
+    "ano": 2024,
+    "preco": 300,
+    "descricao": "Eleito Jogo do Ano 2024! Uma celebração espetacular da história da PlayStation com jogabilidade pura.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 66,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "goty",
+      "plataforma",
+      "aventura",
+      "ps5",
+      "exclusivo"
+    ],
+    "desafios": [
+      "Speedrun Desafio",
+      "Desafio 1v1 Fases"
+    ]
+  },
+  {
+    "id": "batman_arkham_city",
+    "nome": "Batman: Arkham City",
+    "genero": "Ação / Aventura",
+    "ano": 2011,
+    "preco": 150,
+    "descricao": "A aclamada obra-prima com o Joker, Catwoman e combate impecável em mundo aberto na prisão de Gotham.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 15,
+      "PS2": null
+    },
+    "tags": [
+      "batman",
+      "acao",
+      "superheroi",
+      "ps3"
+    ]
+  },
+  {
+    "id": "batman_arkham_knight",
+    "nome": "Batman: Arkham Knight",
+    "genero": "Ação / Aventura",
+    "ano": 2015,
+    "preco": 200,
+    "descricao": "Assume o manto do Cavaleiro das Trevas e conduz o Batmóvel pelas ruas abertas de Gotham City.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 50,
+      "PS4": 48,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "batman",
+      "superheroi",
+      "acao",
+      "mundo aberto"
+    ]
+  },
+  {
+    "id": "battlefield3_ps3",
+    "nome": "Battlefield 3",
+    "genero": "Tiro / FPS",
+    "ano": 2011,
+    "preco": 150,
+    "descricao": "Destruição com motor Frostbite 2, tanques, helicópteros e combates intensos na campanha e modo cooperativo.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 14,
+      "PS2": null
+    },
+    "tags": [
+      "tiro",
+      "guerra",
+      "fps",
+      "ps3"
+    ]
+  },
+  {
+    "id": "black_ps2",
+    "nome": "Black (Clássico PS2)",
+    "genero": "Tiro / FPS",
+    "ano": 2006,
+    "preco": 100,
+    "descricao": "O lendário jogo de tiro da Criterion Games com destruição maciça de cenários e armas pesadas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.8
+    },
+    "tags": [
+      "tiro",
+      "fps",
+      "retro",
+      "ps2",
+      "classico"
+    ]
+  },
+  {
+    "id": "wukong_black_myth",
+    "nome": "Black Myth: Wukong",
+    "genero": "RPG / Ação",
+    "ano": 2024,
+    "preco": 350,
+    "descricao": "O Destinado na mitologia chinesa enfrentando criaturas fantásticas com o bastão Ruyi Jingu Bang e transformações.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 130,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "wukong",
+      "goty",
+      "acao",
+      "rpg",
+      "ps5"
+    ]
+  },
+  {
+    "id": "bloodborne",
+    "nome": "Bloodborne",
+    "genero": "RPG / Ação",
+    "ano": 2015,
+    "preco": 250,
+    "descricao": "Enfrenta os teus piores pesadelos na cidade gótica amaldiçoada de Yharnam com combate ágil da FromSoftware.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 32,
+      "PS4": 30,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "souls",
+      "rpg",
+      "acao",
+      "gotico",
+      "exclusivo"
+    ]
+  },
+  {
+    "id": "bully_ps2",
+    "nome": "Bully (Canis Canem Edit)",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2006,
+    "preco": 100,
+    "descricao": "Controla Jimmy Hopkins na infame Bullworth Academy enfrentando rufias e completando aulas divertidas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.5
+    },
+    "tags": [
+      "rockstar",
+      "classico",
+      "ps2",
+      "mundo aberto"
+    ]
+  },
+  {
+    "id": "burnout3_takedown",
+    "nome": "Burnout 3: Takedown",
+    "genero": "Corrida / Arcada",
+    "ano": 2004,
+    "preco": 100,
+    "descricao": "Velocidade vertiginosa, batidas espetaculares e o modo Crash mais divertido dos videojogos.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.4
+    },
+    "tags": [
+      "corrida",
+      "destruicao",
+      "arcada",
+      "ps2"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Time Attack",
+      "Desafio de Velocidade"
+    ]
+  },
+  {
+    "id": "cod_bo2",
+    "nome": "Call of Duty: Black Ops II",
+    "genero": "Tiro / FPS",
+    "ano": 2012,
+    "preco": 180,
+    "descricao": "O FPS mais aclamado da geração PS3 com a inesquecível campanha de Raul Menendez e modo Zombies.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 17.5,
+      "PS2": null
+    },
+    "tags": [
+      "cod",
+      "tiro",
+      "zombies",
+      "fps",
+      "ps3"
+    ],
+    "desafios": [
+      "1v1 Snipers",
+      "Desafio Zombies Co-op"
+    ]
+  },
+  {
+    "id": "cod_mw3",
+    "nome": "Call of Duty: Modern Warfare III",
+    "genero": "Tiro / FPS",
+    "ano": 2023,
+    "preco": 350,
+    "descricao": "Combates militares frenéticos, campanha com Capitão Price, modo zombies e multijogador em ritmo acelerado.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 140,
+      "PS4": 120,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "cod",
+      "tiro",
+      "guerra",
+      "fps",
+      "acao"
+    ],
+    "desafios": [
+      "1v1 Snipers",
+      "Desafio Zombies Co-op"
+    ]
+  },
+  {
+    "id": "crash_bandicoot_trilogy",
+    "nome": "Crash Bandicoot N. Sane Trilogy",
+    "genero": "Plataforma / Família",
+    "ano": 2017,
+    "preco": 200,
+    "descricao": "Os três jogos clássicos do marsupial mais famoso totalmente remasterizados em HD e 60 FPS.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 23,
+      "PS4": 23,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "plataforma",
+      "aventura",
+      "familia",
+      "classico"
+    ]
+  },
+  {
+    "id": "cyberpunk_2077",
+    "nome": "Cyberpunk 2077: Ultimate Edition",
+    "genero": "RPG / Ação",
+    "ano": 2023,
+    "preco": 300,
+    "descricao": "Explora Night City como o mercenário V com gráficos ray tracing impressionantes e a expansão Phantom Liberty.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 56,
+      "PS4": 55,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "cyberpunk",
+      "rpg",
+      "mundo aberto",
+      "futuro"
+    ]
+  },
+  {
+    "id": "def_jam_ny",
+    "nome": "Def Jam: Fight for NY",
+    "genero": "Luta / Hip-Hop",
+    "ano": 2004,
+    "preco": 100,
+    "descricao": "Lutas brutais no submundo do hip-hop com Snoop Dogg, Busta Rhymes, Ludacris e combates de rua.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.2
+    },
+    "tags": [
+      "luta",
+      "hip hop",
+      "ps2",
+      "retro",
+      "classico"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio de Anime",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "devil_may_cry_3",
+    "nome": "Devil May Cry 3: Dante's Awakening",
+    "genero": "Hack and Slash",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "O auge da ação frenética com o jovem Dante e o seu irmão Vergil em combates acrobáticos cheios de estilo.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.2
+    },
+    "tags": [
+      "hack and slash",
+      "acao",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "Bloody Palace Desafio",
+      "Desafio Pontuação"
+    ]
+  },
+  {
+    "id": "dbz_budokai_tenkaichi_3",
+    "nome": "Dragon Ball Z: Budokai Tenkaichi 3",
+    "genero": "Luta / Anime",
+    "ano": 2007,
+    "preco": 120,
+    "descricao": "O maior jogo de anime de sempre com mais de 160 personagens e batalhas aéreas inesquecíveis.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 4.1
+    },
+    "tags": [
+      "dragon ball",
+      "anime",
+      "luta",
+      "goku",
+      "ps2"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio de Anime",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "fc24",
+    "nome": "EA SPORTS FC 24",
+    "genero": "Futebol",
+    "ano": 2023,
+    "preco": 250,
+    "descricao": "A edição inaugural da era FC com PlayStyles e suporte para torneios locais intensos.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 48,
+      "PS4": 42,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "futebol",
+      "fifa",
+      "ea",
+      "competitivo"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Mata-Mata",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "fc25",
+    "nome": "EA SPORTS FC 25",
+    "genero": "Futebol",
+    "ano": 2024,
+    "preco": 350,
+    "descricao": "A mais recente edição do futebol virtual mais jogado do mundo, com FC IQ e táticas inteligentes.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 52.4,
+      "PS4": 45,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "futebol",
+      "fifa",
+      "ea sports",
+      "competitivo",
+      "lancamento"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Mata-Mata",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "efootball2025",
+    "nome": "eFootball 2025",
+    "genero": "Futebol",
+    "ano": 2024,
+    "preco": 0,
+    "descricao": "Simulador tático da Konami com motor Unreal Engine, controlo fino de bola e jogo online e local.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 45,
+      "PS4": 39.5,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "futebol",
+      "pes",
+      "konami",
+      "gratis"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "elden_ring",
+    "nome": "Elden Ring",
+    "genero": "RPG / Ação",
+    "ano": 2022,
+    "preco": 300,
+    "descricao": "Vencedor de Jogo do Ano: explora as Terras Intermédias e enfrenta semideuses num mundo colossal.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 45,
+      "PS4": 45,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "rpg",
+      "souls",
+      "desafio",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "farcry3_ps3",
+    "nome": "Far Cry 3",
+    "genero": "Tiro / FPS",
+    "ano": 2012,
+    "preco": 150,
+    "descricao": "Enfrenta o insano Vaas Montenegro numa ilha tropical paradisíaca e mortal repleta de postos para libertar.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 10.5,
+      "PS2": null
+    },
+    "tags": [
+      "fps",
+      "tiro",
+      "mundo aberto",
+      "ps3"
+    ]
+  },
+  {
+    "id": "fortnite",
+    "nome": "Fortnite Battle Royale",
+    "genero": "Tiro / Battle Royale",
+    "ano": 2017,
+    "preco": 0,
+    "descricao": "Salta do Battle Bus e combate pela sobrevivência no fenómeno mundial de tiro multijogador.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 35,
+      "PS4": 32,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "tiro",
+      "competitivo",
+      "gratis",
+      "battle royale"
+    ]
+  },
+  {
+    "id": "ghost_of_tsushima",
+    "nome": "Ghost of Tsushima: Director's Cut",
+    "genero": "Ação / Aventura",
+    "ano": 2021,
+    "preco": 300,
+    "descricao": "Torna-te o Fantasma de Tsushima como Jin Sakai e liberta a ilha dos invasores mongóis com combate de katana.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 60,
+      "PS4": 48,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "samurai",
+      "mundo aberto",
+      "acao",
+      "japao"
+    ]
+  },
+  {
+    "id": "god_of_war_2018",
+    "nome": "God of War (2018)",
+    "genero": "Ação / Aventura",
+    "ano": 2018,
+    "preco": 250,
+    "descricao": "Kratos e Atreus na mitologia nórdica com o Machado Leviatã numa jornada épica de redenção e paternidade.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 45,
+      "PS4": 45,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "kratos",
+      "mitologia",
+      "acao",
+      "goty"
+    ]
+  },
+  {
+    "id": "gow2_ps2",
+    "nome": "God of War II (PS2)",
+    "genero": "Ação / Hack & Slash",
+    "ano": 2007,
+    "preco": 100,
+    "descricao": "Kratos desafia o Monte Olimpo e o próprio Zeus na obra-prima absoluta da PlayStation 2.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 7.8
+    },
+    "tags": [
+      "kratos",
+      "god of war",
+      "acao",
+      "ps2",
+      "classico"
+    ]
+  },
+  {
+    "id": "gow3_ps3",
+    "nome": "God of War III",
+    "genero": "Ação / Hack & Slash",
+    "ano": 2010,
+    "preco": 150,
+    "descricao": "A destruição final dos deuses da Grécia com violência visceral e escala colossal na PS3.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": 38,
+      "PS3": 35,
+      "PS2": null
+    },
+    "tags": [
+      "kratos",
+      "god of war",
+      "acao",
+      "mitologia"
+    ]
+  },
+  {
+    "id": "gow_ragnarok",
+    "nome": "God of War Ragnarök",
+    "genero": "Ação / Aventura",
+    "ano": 2022,
+    "preco": 350,
+    "descricao": "Kratos e Atreus enfrentam Thor, Odin e as forças de Asgard pelos nove reinos nórdicos.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 84,
+      "PS4": 106,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "kratos",
+      "god of war",
+      "acao",
+      "aventura",
+      "nordico"
+    ]
+  },
+  {
+    "id": "gt4_ps2",
+    "nome": "Gran Turismo 4 (PS2)",
+    "genero": "Simulação / Corrida",
+    "ano": 2004,
+    "preco": 100,
+    "descricao": "O simulador de condução real com mais de 700 carros e mais de 50 pistas licenciadas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 5.2
+    },
+    "tags": [
+      "corrida",
+      "carros",
+      "simulacao",
+      "ps2"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Time Attack",
+      "Desafio de Velocidade"
+    ]
+  },
+  {
+    "id": "gt7",
+    "nome": "Gran Turismo 7",
+    "genero": "Simulação / Corrida",
+    "ano": 2022,
+    "preco": 350,
+    "descricao": "A celebração máxima da cultura automóvel com clima dinâmico e física de condução de ponta.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 110,
+      "PS4": 110,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "corrida",
+      "carros",
+      "simulador",
+      "playstation"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Time Attack",
+      "Desafio de Velocidade"
+    ]
+  },
+  {
+    "id": "gta4_ps3",
+    "nome": "Grand Theft Auto IV (GTA IV)",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2008,
+    "preco": 150,
+    "descricao": "A chegada do imigrante Niko Bellic a Liberty City em busca do Sonho Americano com física euforia sem igual.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 18,
+      "PS2": null
+    },
+    "tags": [
+      "gta",
+      "rockstar",
+      "mundo aberto",
+      "ps3"
+    ]
+  },
+  {
+    "id": "gtav",
+    "nome": "Grand Theft Auto V",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2013,
+    "preco": 300,
+    "descricao": "O épico de Los Santos de Franklin, Michael e Trevor com mundo aberto sem limites e assaltos lendários.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 95,
+      "PS4": 85,
+      "PS3": 18,
+      "PS2": null
+    },
+    "tags": [
+      "gta",
+      "rockstar",
+      "mundo aberto",
+      "carros",
+      "tiro"
+    ]
+  },
+  {
+    "id": "gta_san_andreas",
+    "nome": "Grand Theft Auto: San Andreas",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2004,
+    "preco": 150,
+    "descricao": "CJ está de volta a Los Santos e Grove Street no jogo de mundo aberto mais famoso da história.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 28,
+      "PS4": 25,
+      "PS3": 4.2,
+      "PS2": 4.1
+    },
+    "tags": [
+      "gta",
+      "san andreas",
+      "mundo aberto",
+      "cj",
+      "classico"
+    ]
+  },
+  {
+    "id": "gta_vice_city",
+    "nome": "Grand Theft Auto: Vice City",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2002,
+    "preco": 100,
+    "descricao": "Anos 80, neon, camisas havaianas e Tommy Vercetti a conquistar as ruas ensolaradas de Vice City.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.2
+    },
+    "tags": [
+      "gta",
+      "anos 80",
+      "ps2",
+      "classico"
+    ]
+  },
+  {
+    "id": "helldivers2",
+    "nome": "Helldivers 2",
+    "genero": "Tiro / Cooperativo",
+    "ano": 2024,
+    "preco": 300,
+    "descricao": "Espalha a Liberdade Gerida pela galáxia combatendo hordas de Terminids e Automatons com poder de fogo massivo.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 30,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "tiro",
+      "coop",
+      "online",
+      "ps5",
+      "sucesso"
+    ]
+  },
+  {
+    "id": "horizon",
+    "nome": "Horizon Forbidden West",
+    "genero": "Ação / RPG",
+    "ano": 2022,
+    "preco": 300,
+    "descricao": "Acompanha Aloy através de terras distantes no Oeste Proibido enfrentando máquinas colossais.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 90,
+      "PS4": 90,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "acao",
+      "rpg",
+      "aloy",
+      "maquinas",
+      "graficos"
+    ]
+  },
+  {
+    "id": "injustice2",
+    "nome": "Injustice 2: Legendary Edition",
+    "genero": "Luta",
+    "ano": 2017,
+    "preco": 200,
+    "descricao": "Batman contra o regime do Superman e a ameaça de Brainiac com combates violentos e super-ataques de cinema.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 52,
+      "PS4": 50,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "luta",
+      "dc",
+      "batman",
+      "superman"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "spiderman",
+    "nome": "Marvel's Spider-Man",
+    "genero": "Ação / Aventura",
+    "ano": 2018,
+    "preco": 250,
+    "descricao": "Balança-te pelos arranha-céus de Nova Iorque com Peter Parker em combates acrobáticos de elite.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 55,
+      "PS4": 49,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "homem aranha",
+      "marvel",
+      "acao",
+      "super heroi"
+    ]
+  },
+  {
+    "id": "spiderman2_ps5",
+    "nome": "Marvel's Spider-Man 2",
+    "genero": "Ação / Aventura",
+    "ano": 2023,
+    "preco": 350,
+    "descricao": "Joga como Peter Parker e Miles Morales enfrentando Venom e Kraven com asas de teia.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 88,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "homem aranha",
+      "marvel",
+      "venom",
+      "ps5"
+    ]
+  },
+  {
+    "id": "medal_of_honor_vanguard",
+    "nome": "Medal of Honor: Vanguard",
+    "genero": "Tiro / FPS",
+    "ano": 2007,
+    "preco": 100,
+    "descricao": "Salta de paraquedas em território inimigo durante a Segunda Guerra Mundial como o cabo Frank Keegan.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.9
+    },
+    "tags": [
+      "tiro",
+      "segunda guerra",
+      "fps",
+      "ps2"
+    ]
+  },
+  {
+    "id": "minecraft",
+    "nome": "Minecraft: Bedrock Edition",
+    "genero": "Família / Criativo",
+    "ano": 2014,
+    "preco": 150,
+    "descricao": "Cria tudo o que imaginas em blocos cúbicos, sobrevive à noite e joga em ecrã dividido.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 2.5,
+      "PS4": 2.2,
+      "PS3": 1.8,
+      "PS2": null
+    },
+    "tags": [
+      "familia",
+      "criativo",
+      "construcao",
+      "infantil"
+    ]
+  },
+  {
+    "id": "mk1",
+    "nome": "Mortal Kombat 1",
+    "genero": "Luta / Combate",
+    "ano": 2023,
+    "preco": 350,
+    "descricao": "O universo renascido de Liu Kang com sistema de lutadores de parceria Kameo e Fatalities brutais.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 110,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "mortal kombat",
+      "luta",
+      "fatality",
+      "versus"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Double Elimination",
+      "Rei da Mesa (Pote)"
+    ]
+  },
+  {
+    "id": "mk_shaolin_monks",
+    "nome": "Mortal Kombat: Shaolin Monks",
+    "genero": "Ação / Cooperativo",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "A aventura cooperativa de Liu Kang e Kung Lao na Outworld, repleta de combos em dupla e segredos.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.4
+    },
+    "tags": [
+      "mortal kombat",
+      "coop",
+      "luta",
+      "ps2",
+      "classico"
+    ]
+  },
+  {
+    "id": "naruto_storm4",
+    "nome": "Naruto Shippuden: Ultimate Ninja Storm 4",
+    "genero": "Luta / Anime",
+    "ano": 2016,
+    "preco": 200,
+    "descricao": "A conclusão épica da Quarta Grande Guerra Ninja com jutsus devastadores e trocas de líderes.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 42,
+      "PS4": 38,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "naruto",
+      "anime",
+      "luta",
+      "versus"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio de Anime",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "nfs_heat",
+    "nome": "Need for Speed Heat",
+    "genero": "Corrida / Arcada",
+    "ano": 2019,
+    "preco": 250,
+    "descricao": "Trabalha de dia no Speedhunters Showdown e arrisca tudo à noite em corridas clandestinas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 32,
+      "PS4": 30,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "nfs",
+      "corrida",
+      "tuning",
+      "policia"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Time Attack",
+      "Desafio de Velocidade"
+    ]
+  },
+  {
+    "id": "nfs_unbound",
+    "nome": "Need for Speed Unbound",
+    "genero": "Corrida / Arcada",
+    "ano": 2022,
+    "preco": 300,
+    "descricao": "Corridas de rua clandestinas em Lakeshore City com estilo de arte anime graffiti e personalização profunda.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 35,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "corrida",
+      "tuning",
+      "velocidade",
+      "ps5"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Desafio Time Attack",
+      "Torneio Drift"
+    ]
+  },
+  {
+    "id": "nfs_most_wanted",
+    "nome": "Need for Speed: Most Wanted (2005)",
+    "genero": "Corrida / Polícia",
+    "ano": 2005,
+    "preco": 120,
+    "descricao": "Derruba a Blacklist de Rockport e pilota o BMW M3 GTR em fugas policiais inesquecíveis.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.1
+    },
+    "tags": [
+      "nfs",
+      "corrida",
+      "policia",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "1v1 Circuito",
+      "Time Attack",
+      "Desafio de Velocidade"
+    ]
+  },
+  {
+    "id": "nfs_underground2",
+    "nome": "Need for Speed: Underground 2",
+    "genero": "Corrida / Tuning",
+    "ano": 2004,
+    "preco": 100,
+    "descricao": "O ápice da cultura do tuning com Bayview aberta, som no porta-malas, neon e a inesquecível trilha Riders on the Storm.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.2
+    },
+    "tags": [
+      "tuning",
+      "corrida",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "1v1 Arrancada",
+      "Desafio Drift",
+      "Circuito Urbano"
+    ]
+  },
+  {
+    "id": "pes2013_ps3",
+    "nome": "PES 2013 (Pro Evolution Soccer)",
+    "genero": "Futebol",
+    "ano": 2012,
+    "preco": 150,
+    "descricao": "O melhor jogo de futebol da geração PS3 com Cristiano Ronaldo na capa e jogabilidade fluida e equilibrada.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 8.5,
+      "PS2": null
+    },
+    "tags": [
+      "futebol",
+      "cr7",
+      "ps3",
+      "nostalgia"
+    ],
+    "desafios": [
+      "1v1 Clássico",
+      "Torneio Nostalgia",
+      "Mata-Mata"
+    ]
+  },
+  {
+    "id": "pes2021",
+    "nome": "PES 2021 Season Update",
+    "genero": "Futebol",
+    "ano": 2020,
+    "preco": 200,
+    "descricao": "Aclamada física de futebol da Konami com a lendária Master League e opção de patches atualizados.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": 38,
+      "PS3": 18,
+      "PS2": null
+    },
+    "tags": [
+      "futebol",
+      "pes",
+      "konami",
+      "master league"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "pes6_bomba_patch",
+    "nome": "PES 6 / Bomba Patch 100% Atualizado",
+    "genero": "Futebol",
+    "ano": 2006,
+    "preco": 100,
+    "descricao": "O maior clássico das salas de jogos em Moçambique com Adriano Imperador e Ronaldinho Gaúcho no auge.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.1
+    },
+    "tags": [
+      "futebol",
+      "bomba patch",
+      "adriano",
+      "ps2",
+      "sala de jogos"
+    ],
+    "desafios": [
+      "1v1 Clássico",
+      "Torneio de Bairro",
+      "Desafio Imperador"
+    ]
+  },
+  {
+    "id": "red_dead_redemption_ps3",
+    "nome": "Red Dead Redemption (PS3)",
+    "genero": "Ação / Velho Oeste",
+    "ano": 2010,
+    "preco": 150,
+    "descricao": "A jornada lendária de John Marston pelas pradarias do Velho Oeste americano e México com o sistema Dead Eye.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 12,
+      "PS2": null
+    },
+    "tags": [
+      "velho oeste",
+      "rockstar",
+      "mundo aberto",
+      "ps3"
+    ]
+  },
+  {
+    "id": "rdr2",
+    "nome": "Red Dead Redemption 2",
+    "genero": "Ação / Mundo Aberto",
+    "ano": 2018,
+    "preco": 350,
+    "descricao": "A comovente história de Arthur Morgan e o bando de Van der Linde no Velho Oeste americano.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": 105,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "western",
+      "rockstar",
+      "mundo aberto",
+      "tiro"
+    ]
+  },
+  {
+    "id": "resident_evil_4_ps2",
+    "nome": "Resident Evil 4 (Clássico PS2)",
+    "genero": "Ação / Terror",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "Leon S. Kennedy na vila espanhola infestada por Las Plagas no jogo que revolucionou a câmara sobre o ombro.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 4.1
+    },
+    "tags": [
+      "terror",
+      "acao",
+      "leon",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "Modo Mercenários 1v1",
+      "Desafio Pontuação"
+    ]
+  },
+  {
+    "id": "re4_remake",
+    "nome": "Resident Evil 4 Remake",
+    "genero": "Terror / Sobrevivência",
+    "ano": 2023,
+    "preco": 350,
+    "descricao": "Leon S. Kennedy viaja até uma vila europeia isolada para resgatar a filha do presidente.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 67,
+      "PS4": 65,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "terror",
+      "survival horror",
+      "zombies",
+      "leon"
+    ]
+  },
+  {
+    "id": "resident_evil_5_ps3",
+    "nome": "Resident Evil 5",
+    "genero": "Ação / Terror",
+    "ano": 2009,
+    "preco": 150,
+    "descricao": "Chris Redfield e Sheva Alomar sob o sol escaldante de Kijuju enfrentando Albert Wesker em modo cooperativo.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 10,
+      "PS2": null
+    },
+    "tags": [
+      "terror",
+      "acao",
+      "coop",
+      "ps3"
+    ]
+  },
+  {
+    "id": "shadow_of_colossus",
+    "nome": "Shadow of the Colossus (PS2)",
+    "genero": "Aventura Épica",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "Wander e o cavalo Agro em busca dos 16 gigantescos colossos numa terra proibida com banda sonora inesquecível.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 2.6
+    },
+    "tags": [
+      "aventura",
+      "epico",
+      "ps2",
+      "arte"
+    ]
+  },
+  {
+    "id": "street_fighter_6",
+    "nome": "Street Fighter 6",
+    "genero": "Luta",
+    "ano": 2023,
+    "preco": 300,
+    "descricao": "Ryu, Chun-Li, Luke e Juri com o novo sistema Drive Gauge e combates eletrizantes prontos para eSports.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 60,
+      "PS4": 55,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "luta",
+      "esports",
+      "street fighter",
+      "ps5"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Eliminatório",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "tekken_5_ps2",
+    "nome": "Tekken 5",
+    "genero": "Luta",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "Jin Kazama, Kazuya, Heihachi, Hwoarang e Raven no melhor jogo de luta 3D de sempre da PlayStation 2.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 4
+    },
+    "tags": [
+      "tekken",
+      "luta",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Torneio Iron Fist Retrô",
+      "Rei da Mesa"
+    ]
+  },
+  {
+    "id": "tekken8",
+    "nome": "Tekken 8",
+    "genero": "Luta / Competitivo",
+    "ano": 2024,
+    "preco": 350,
+    "descricao": "A saga do Punho de Ferro atinge um novo patamar com o agressivo sistema Heat e gráficos Unreal 5.",
+    "destaque": true,
+    "tamanhos": {
+      "PS5": 85,
+      "PS4": null,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "luta",
+      "combate",
+      "competitivo",
+      "versus",
+      "esports"
+    ],
+    "desafios": [
+      "1v1 Direto",
+      "Double Elimination",
+      "Rei da Mesa (Pote)"
+    ]
+  },
+  {
+    "id": "the_last_of_us_part1",
+    "nome": "The Last of Us Part I",
+    "genero": "Ação / História",
+    "ano": 2022,
+    "preco": 350,
+    "descricao": "A emocionante jornada de Joel e Ellie pelos Estados Unidos pós-pandémico reconstruída para PS5.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 79,
+      "PS4": 48,
+      "PS3": 30,
+      "PS2": null
+    },
+    "tags": [
+      "historia",
+      "zombies",
+      "acao",
+      "playstation"
+    ]
+  },
+  {
+    "id": "the_witcher_3",
+    "nome": "The Witcher 3: Wild Hunt (Complete Edition)",
+    "genero": "RPG / Aventura",
+    "ano": 2022,
+    "preco": 250,
+    "descricao": "Geralt de Rívia em busca de Ciri num mundo vasto de monstros, contratos e as expansões Hearts of Stone e Blood and Wine.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 50,
+      "PS4": 42,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "rpg",
+      "mundo aberto",
+      "goty",
+      "fantasia"
+    ]
+  },
+  {
+    "id": "tony_hawk_ps4",
+    "nome": "Tony Hawk's Pro Skater 4",
+    "genero": "Skate / Desporto",
+    "ano": 2002,
+    "preco": 100,
+    "descricao": "Skate de rua sem limites de tempo, manobras especiais, combos insanos e trilha sonora punk rock inesquecível.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 1.8
+    },
+    "tags": [
+      "skate",
+      "desporto",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "Desafio Melhor Combo",
+      "Desafio Pontuação 1v1"
+    ]
+  },
+  {
+    "id": "uncharted2_ps3",
+    "nome": "Uncharted 2: Among Thieves",
+    "genero": "Ação / Aventura",
+    "ano": 2009,
+    "preco": 150,
+    "descricao": "Nathan Drake nos Himalaias e na lendária Shambhala no capítulo mais premiado da saga com ação de tirar o fôlego.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": 20,
+      "PS2": null
+    },
+    "tags": [
+      "uncharted",
+      "aventura",
+      "goty",
+      "ps3"
+    ]
+  },
+  {
+    "id": "uncharted4_ps4",
+    "nome": "Uncharted 4: A Thief's End",
+    "genero": "Ação / Aventura",
+    "ano": 2016,
+    "preco": 250,
+    "descricao": "A última grande caçada de Nathan Drake pelo tesouro de Henry Avery em Libertalia ao lado do irmão Sam Drake.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 48,
+      "PS4": 48,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "uncharted",
+      "aventura",
+      "acao",
+      "ps4"
+    ]
+  },
+  {
+    "id": "wwe2k24",
+    "nome": "WWE 2K24",
+    "genero": "Luta Livre / Desporto",
+    "ano": 2024,
+    "preco": 350,
+    "descricao": "Celebra 40 anos de WrestleMania com Cody Rhodes, Roman Reigns, The Undertaker e novas lutas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": 80,
+      "PS4": 75,
+      "PS3": null,
+      "PS2": null
+    },
+    "tags": [
+      "wwe",
+      "luta livre",
+      "desporto",
+      "multijogador"
+    ],
+    "desafios": [
+      "1v1 Fatal Match",
+      "Royal Rumble Arena"
+    ]
+  },
+  {
+    "id": "smackdown_vs_raw_2006",
+    "nome": "WWE SmackDown! vs. RAW 2006",
+    "genero": "Luta Livre / Desporto",
+    "ano": 2005,
+    "preco": 100,
+    "descricao": "A Era de Ouro da WWE com John Cena, Rey Mysterio, Undertaker, Batista e combates de mesas, cadeiras e escadas.",
+    "destaque": false,
+    "tamanhos": {
+      "PS5": null,
+      "PS4": null,
+      "PS3": null,
+      "PS2": 3.8
+    },
+    "tags": [
+      "wwe",
+      "luta livre",
+      "ps2",
+      "classico"
+    ],
+    "desafios": [
+      "1v1 TLC",
+      "Royal Rumble Arena",
+      "Torneio Campeão"
+    ]
+  }
+]

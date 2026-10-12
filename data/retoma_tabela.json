@@ -1,0 +1,21 @@
+{
+  "consolas": [
+    { "id": "ps5_disc", "nome": "PlayStation 5 (Com Leitor de Disco)", "base": 26000, "excelente": 30000, "bom": 26000, "marcas": 22000 },
+    { "id": "ps5_digital", "nome": "PlayStation 5 Digital Edition", "base": 22000, "excelente": 25000, "bom": 22000, "marcas": 19000 },
+    { "id": "ps4_pro", "nome": "PlayStation 4 Pro 1TB 4K", "base": 14000, "excelente": 16500, "bom": 14000, "marcas": 11500 },
+    { "id": "ps4_slim_1tb", "nome": "PlayStation 4 Slim 1TB", "base": 11000, "excelente": 13500, "bom": 11000, "marcas": 9000 },
+    { "id": "ps4_slim_500gb", "nome": "PlayStation 4 Slim 500GB", "base": 9500, "excelente": 11500, "bom": 9500, "marcas": 7500 },
+    { "id": "ps3_super_slim", "nome": "PlayStation 3 Super Slim", "base": 4500, "excelente": 5800, "bom": 4500, "marcas": 3500 },
+    { "id": "ps2_slim", "nome": "PlayStation 2 Slim", "base": 1800, "excelente": 2500, "bom": 1800, "marcas": 1200 }
+  ],
+  "joys": [
+    { "id": "dualsense_ps5", "nome": "Comando DualSense PS5 Original", "base": 2200, "excelente": 2800, "bom": 2200, "marcas": 1600 },
+    { "id": "dualshock4_ps4", "nome": "Comando DualShock 4 Original PS4", "base": 1100, "excelente": 1500, "bom": 1100, "marcas": 800 },
+    { "id": "dualshock3_ps3", "nome": "Comando DualShock 3 PS3", "base": 450, "excelente": 650, "bom": 450, "marcas": 300 }
+  ],
+  "cds": [
+    { "id": "cd_lancamento", "nome": "CD Lançamento Recente (FC 25, Tekken 8, Spider-Man 2)", "base": 1800, "excelente": 2400, "bom": 1800, "marcas": 1200 },
+    { "id": "cd_popular", "nome": "CD Jogo Popular (GTA V, God of War Ragnarök, MK11, PES 21)", "base": 1000, "excelente": 1400, "bom": 1000, "marcas": 700 },
+    { "id": "cd_classico", "nome": "CD Jogo Clássico / Outros Títulos", "base": 500, "excelente": 750, "bom": 500, "marcas": 350 }
+  ]
+}

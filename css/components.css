@@ -1,0 +1,528 @@
+/* ==========================================================================
+   JOGATINAL - components.css
+   Botões, cards, badges funcionais, barras de progresso e toasts
+   ========================================================================== */
+
+/* ==========================================================================
+   Botões
+   ========================================================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--espaco-xs);
+  min-height: var(--alvo-toque-minimo);
+  padding: 0.5rem 0.875rem;
+  font-family: var(--fonte-subtitulos);
+  font-size: var(--tipo-pequeno);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: var(--raio-md);
+  border: 1px solid transparent;
+  transition: all var(--transicao-rapida);
+  user-select: none;
+  text-decoration: none;
+  max-width: 100%;
+  text-align: center;
+  line-height: 1.2;
+}
+
+@media (min-width: 480px) {
+  .btn {
+    gap: var(--espaco-sm);
+    padding: 0.625rem 1.25rem;
+    white-space: nowrap;
+  }
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn:disabled,
+.btn[aria-disabled="true"],
+.btn.carregando {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: grayscale(30%);
+}
+
+.btn-verde {
+  background: linear-gradient(135deg, var(--cor-verde-marca) 0%, #00c763 100%);
+  color: #000000;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(0, 229, 117, 0.35), 0 0 10px rgba(0, 229, 117, 0.2);
+}
+
+.btn-verde:hover:not(:disabled) {
+  background: linear-gradient(135deg, var(--cor-verde-hover) 0%, var(--cor-verde-marca) 100%);
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(0, 229, 117, 0.5), 0 0 18px rgba(0, 229, 117, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-azul {
+  background: linear-gradient(135deg, #0070d1 0%, #0056a3 100%);
+  color: #ffffff;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(0, 112, 209, 0.35), 0 0 10px rgba(0, 112, 209, 0.2);
+}
+
+.btn-azul:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1a88eb 0%, #0070d1 100%);
+  color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 112, 209, 0.5), 0 0 18px rgba(0, 112, 209, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-dourado {
+  background: linear-gradient(135deg, var(--cor-dourado) 0%, #e59d00 100%);
+  color: #000000;
+  font-weight: 800;
+  box-shadow: 0 4px 14px rgba(255, 184, 0, 0.35), 0 0 10px rgba(255, 184, 0, 0.2);
+}
+
+.btn-dourado:hover:not(:disabled) {
+  background: linear-gradient(135deg, #ffd043 0%, var(--cor-dourado) 100%);
+  color: #000000;
+  box-shadow: 0 6px 20px rgba(255, 184, 0, 0.5), 0 0 18px rgba(255, 184, 0, 0.35);
+  transform: translateY(-1px);
+}
+
+.btn-secundario {
+  background-color: var(--cor-superficie);
+  color: var(--cor-texto-principal);
+  border-color: var(--cor-borda);
+}
+
+.btn-secundario:hover:not(:disabled) {
+  background-color: var(--cor-superficie-elevada);
+  border-color: var(--cor-borda-suave);
+  color: #ffffff;
+}
+
+.btn-outline {
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--cor-texto-principal);
+  border-color: var(--cor-borda-suave);
+}
+
+.btn-outline:hover:not(:disabled) {
+  border-color: var(--cor-verde-marca);
+  color: var(--cor-verde-marca);
+  background-color: var(--cor-verde-fundo);
+  box-shadow: 0 0 14px rgba(0, 229, 117, 0.2);
+}
+
+.btn-sm {
+  min-height: 36px;
+  padding: 0.35rem 0.625rem;
+  font-size: var(--tipo-micro);
+}
+
+@media (min-width: 480px) {
+  .btn-sm {
+    padding: 0.375rem 0.875rem;
+  }
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* ==========================================================================
+   Cards & Superfícies Gamer (Obsidian Glass + Glow Borders)
+   ========================================================================== */
+
+.card {
+  background: linear-gradient(145deg, rgba(22, 28, 43, 0.95) 0%, rgba(16, 20, 31, 0.95) 100%);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-lg);
+  box-shadow: var(--sombra-card);
+  padding: 1rem 0.875rem;
+  position: relative;
+  transition: transform var(--transicao-rapida), border-color var(--transicao-rapida), box-shadow var(--transicao-rapida);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: var(--espaco-lg);
+  }
+}
+
+.card:hover {
+  border-color: var(--cor-verde-marca);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6), 0 0 18px rgba(0, 229, 117, 0.12);
+}
+
+/* Destaque com barra lateral neon */
+.card-destaque {
+  border-left: 3px solid var(--cor-verde-marca);
+}
+
+/* Card de Prémio / Troféu Gamer */
+.card-premio {
+  border-top: 2px solid var(--cor-dourado);
+  background: linear-gradient(180deg, rgba(255, 184, 0, 0.08) 0%, rgba(22, 28, 43, 0.95) 40%);
+}
+
+.card-premio-lateral {
+  background: linear-gradient(145deg, rgba(26, 33, 50, 0.98) 0%, rgba(16, 20, 31, 0.98) 100%);
+  border: 1px solid var(--cor-borda-suave);
+  border-top: 3px solid var(--cor-dourado);
+  border-radius: var(--raio-xl);
+  padding: 1rem 0.875rem;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.65), 0 0 20px rgba(255, 184, 0, 0.1);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .card-premio-lateral {
+    padding: var(--espaco-xl);
+  }
+}
+
+/* ==========================================================================
+   Metadados Não-Pill & Badges de Estado
+   ========================================================================== */
+
+.metadados-linha {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaco-sm);
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-suave);
+}
+
+.metadados-separador {
+  color: var(--cor-texto-muted);
+  user-select: none;
+}
+
+.badge-estado {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: var(--tipo-micro);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--raio-sm);
+}
+
+.badge-estado.aberto {
+  background-color: var(--cor-verde-fundo);
+  color: var(--cor-verde-hover);
+  border: 1px solid rgba(63, 168, 106, 0.3);
+}
+
+.badge-estado.esgotado {
+  background-color: rgba(122, 114, 104, 0.15);
+  color: var(--cor-texto-muted);
+  border: 1px solid rgba(122, 114, 104, 0.3);
+}
+
+.badge-estado.destaque {
+  background-color: var(--cor-dourado-fundo);
+  color: var(--cor-dourado);
+  border: 1px solid rgba(232, 184, 75, 0.3);
+}
+
+/* ==========================================================================
+   Formulários & Controles
+   ========================================================================== */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-xs);
+  margin-bottom: var(--espaco-md);
+}
+
+.form-label {
+  font-size: var(--tipo-pequeno);
+  font-weight: 600;
+  color: var(--cor-texto-principal);
+}
+
+.form-control {
+  width: 100%;
+  min-height: var(--alvo-toque-minimo);
+  background-color: var(--cor-fundo-secundario);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  padding: 0.625rem 0.875rem;
+  color: var(--cor-texto-principal);
+  font-size: var(--tipo-corpo);
+  transition: border-color var(--transicao-rapida);
+}
+
+.form-control:focus {
+  border-color: var(--cor-verde-marca);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(63, 168, 106, 0.2);
+}
+
+.form-control::placeholder {
+  color: var(--cor-texto-muted);
+}
+
+.form-error {
+  color: var(--cor-vermelho-erro);
+  font-size: var(--tipo-micro);
+  font-weight: 500;
+  margin-top: 0.125rem;
+}
+
+/* Checkbox personalizado */
+.form-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-sm);
+  cursor: pointer;
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-suave);
+  line-height: 1.4;
+}
+
+.form-checkbox-label input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--cor-verde-marca);
+  cursor: pointer;
+  margin-top: 2px;
+}
+
+/* ==========================================================================
+   Barra de Progresso (Capacidade & Vagas)
+   Dinâmica: < 75% verde, 75-90% amarelo/dourado, > 90% cheio
+   ========================================================================== */
+
+.progresso-container {
+  width: 100%;
+  height: 8px;
+  background-color: var(--cor-fundo-principal);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-full);
+  overflow: hidden;
+  position: relative;
+}
+
+.progresso-barra {
+  height: 100%;
+  width: 0%;
+  background-color: var(--cor-verde-marca);
+  border-radius: var(--raio-full);
+  transition: width 300ms cubic-bezier(0.16, 1, 0.3, 1), background-color 200ms ease;
+}
+
+.progresso-barra.nivel-alerta {
+  background-color: var(--cor-dourado);
+}
+
+.progresso-barra.nivel-critico {
+  background-color: var(--cor-vermelho-erro);
+}
+
+/* ==========================================================================
+   Estados Vazios (Empty States)
+   ========================================================================== */
+
+.estado-vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--espaco-3xl) var(--espaco-md);
+  border: 1px dashed var(--cor-borda);
+  border-radius: var(--raio-lg);
+  background-color: rgba(28, 25, 23, 0.4);
+}
+
+.estado-vazio-icone {
+  width: 48px;
+  height: 48px;
+  color: var(--cor-texto-muted);
+  margin-bottom: var(--espaco-md);
+}
+
+.estado-vazio-titulo {
+  font-family: var(--fonte-subtitulos);
+  font-size: var(--tipo-h3);
+  font-weight: 700;
+  color: var(--cor-texto-principal);
+  margin-bottom: var(--espaco-xs);
+}
+
+.estado-vazio-texto {
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-suave);
+  max-width: 40ch;
+}
+
+/* ==========================================================================
+   Botão Flutuante de WhatsApp Mobile (Acesso Rápido com Polegar)
+   ========================================================================== */
+
+.btn-whatsapp-flutuante {
+  position: fixed;
+  bottom: 84px;
+  right: var(--espaco-md);
+  z-index: 90;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--raio-full);
+  background-color: var(--cor-verde-marca);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  transition: transform var(--transicao-rapida), background-color var(--transicao-rapida);
+  text-decoration: none;
+}
+
+.btn-whatsapp-flutuante:hover {
+  background-color: var(--cor-verde-hover);
+  transform: scale(1.06);
+}
+
+.btn-whatsapp-flutuante:active {
+  transform: scale(0.94);
+}
+
+/* Ocultar em telas onde possa conflitar com o rodapé fixo do configurador ou ajustar posição */
+body#configurador-app .btn-whatsapp-flutuante {
+  bottom: 88px;
+}
+
+@media (min-width: 768px) {
+  .btn-whatsapp-flutuante {
+    bottom: var(--espaco-xl);
+    right: var(--espaco-xl);
+    width: 56px;
+    height: 56px;
+    font-size: 1.75rem;
+  }
+  body#configurador-app .btn-whatsapp-flutuante {
+    bottom: 96px;
+  }
+}
+
+/* ==========================================================================
+   Botão de Cópia Rápida de M-Pesa / e-Mola (1 Toque)
+   ========================================================================== */
+
+.box-copiar-mpesa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espaco-sm);
+  background-color: var(--cor-fundo-secundario);
+  border: 1px dashed var(--cor-borda-suave);
+  border-radius: var(--raio-md);
+  padding: 0.625rem 0.875rem;
+  margin-top: var(--espaco-xs);
+}
+
+.btn-copiar-acao {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--tipo-micro);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--cor-verde-marca);
+  background: rgba(63, 168, 106, 0.12);
+  border: 1px solid rgba(63, 168, 106, 0.3);
+  border-radius: var(--raio-sm);
+  padding: 0.35rem 0.65rem;
+  min-height: 36px;
+  cursor: pointer;
+  transition: all var(--transicao-rapida);
+}
+
+.btn-copiar-acao:active {
+  transform: scale(0.95);
+  background: var(--cor-verde-marca);
+  color: #ffffff;
+}
+
+/* ==========================================================================
+   Toast de Notificação (Sem alert())
+   ========================================================================== */
+
+#toast-container {
+  position: fixed;
+  bottom: var(--espaco-xl);
+  right: 0.75rem;
+  left: 0.75rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaco-sm);
+  max-width: calc(100vw - 1.5rem);
+  pointer-events: none;
+}
+
+@media (min-width: 480px) {
+  #toast-container {
+    left: auto;
+    right: var(--espaco-md);
+    max-width: 380px;
+  }
+}
+
+@media (min-width: 768px) {
+  #toast-container {
+    right: var(--espaco-xl);
+  }
+}
+
+.toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--espaco-sm);
+  padding: var(--espaco-md);
+  background-color: var(--cor-superficie-elevada);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-md);
+  box-shadow: var(--sombra-elevada);
+  font-size: var(--tipo-pequeno);
+  color: var(--cor-texto-principal);
+  transform: translateY(20px);
+  opacity: 0;
+  animation: toastEntrada 250ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast.sucesso {
+  border-left: 4px solid var(--cor-verde-marca);
+}
+
+.toast.erro {
+  border-left: 4px solid var(--cor-vermelho-erro);
+}
+
+.toast.info {
+  border-left: 4px solid var(--cor-dourado);
+}
+
+@keyframes toastEntrada {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

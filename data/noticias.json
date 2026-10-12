@@ -1,0 +1,57 @@
+[
+  {
+    "id": "noticia-fc25-masters",
+    "titulo": "Abertas as inscrições para o FC 25 Matola Masters com 15.000 MT em prémios",
+    "categoria": "Torneios",
+    "autor": "Equipa JOGATINAL",
+    "data": "28 de Setembro de 2026",
+    "leituraMinutos": 4,
+    "resumo": "A maior competição presencial de futebol virtual da província de Maputo está confirmada para a Arena Matola Muhalaze / Ngolhoza. Garante já o teu lugar nas eliminatórias.",
+    "conteudo": "Estão oficialmente abertas as inscrições para o mais aguardado torneio de futebol virtual do ano: o FC 25 Matola Masters! O evento junta 32 dos melhores jogadores de Matola, Maputo e Boane numa disputa feroz em PlayStation 5. O campeão levará para casa 10.000 MT em dinheiro e o prestigiado Troféu Dourado JOGATINAL. As partidas decorrem em sistema mata-mata com ecrãs de baixa latência e arbitragem presencial dedicada. O segundo lugar recebe 3.500 MT e o terceiro lugar 1.500 MT.",
+    "destaque": true
+  },
+  {
+    "id": "noticia-expansao-deslocacao",
+    "titulo": "Serviço de instalação ao domicílio expande com novos técnicos para Boane e Belo Horizonte",
+    "categoria": "Serviços",
+    "autor": "Suporte Técnico",
+    "data": "22 de Setembro de 2026",
+    "leituraMinutos": 3,
+    "resumo": "Agora já não precisas de deslocar-te à loja para encher o teu disco de jogos. O nosso técnico vai até à tua residência com biblioteca completa.",
+    "conteudo": "Para responder ao elevado número de pedidos dos gamers fora do centro da Matola, o serviço de instalação ao domicílio da JOGATINAL foi reforçado com carrinha técnica e equipamentos de transferência de alta velocidade. Cobrimos agora rotas regulares em Boane, Belo Horizonte e Machava. O cliente agenda a visita, escolhe os jogos através do nosso configurador e o técnico realiza a instalação e testes de arranque no local com total comodidade e segurança.",
+    "destaque": false
+  },
+  {
+    "id": "noticia-analise-tatica-fc25",
+    "titulo": "Análise tática: Melhores formações competitivas no FC 25 pós-atualização",
+    "categoria": "Dicas & Guias",
+    "autor": "Celso 'Kaiser' Sitoe (Líder do Ranking)",
+    "data": "15 de Setembro de 2026",
+    "leituraMinutos": 5,
+    "resumo": "O atual número 1 do ranking da JOGATINAL partilha as táticas personalizadas de 4-2-3-1 e pressão pós-perda que estão a desequilibrar os jogos.",
+    "conteudo": "Com o lançamento das últimas atualizações da EA SPORTS, o controlo no meio-campo e a velocidade de transição tornaram-se fundamentais. Celso Sitoe explica: 'No FC 25, o posicionamento dos médios defensivos determina 70% do resultado. Se jogares em 4-2-3-1 com um médio a cobrir o centro e laterais com instruções de apoio equilibrado, consegues anular os contra-ataques rápidos que são muito perigosos neste motor.' Vê neste guia completo os valores recomendados de amplitude, profundidade e construção de jogadas.",
+    "destaque": false
+  },
+  {
+    "id": "noticia-novos-hds-catalogo",
+    "titulo": "Novos discos externos de 1TB e 2TB chegam com garantia de 6 meses e jogos prontos",
+    "categoria": "Loja",
+    "autor": "Vendas JOGATINAL",
+    "data": "10 de Setembro de 2026",
+    "leituraMinutos": 3,
+    "resumo": "Recebemos nova remessa de HDs Western Digital e Toshiba Canvio com velocidade USB 3.0 para PlayStation 4 e PlayStation 5.",
+    "conteudo": "Enfrentar problemas de falta de espaço no armazenamento da consola é uma dor de cabeça comum. Para resolver isso de vez, disponibilizamos unidades seladas de 500GB, 1TB e 2TB com excelente velocidade de leitura contínua. Para além disso, no Modo D do nosso configurador, podes encomendar o HD já totalmente configurado com os teus títulos favoritos: basta ligar à porta USB da consola e começar a jogar imediatamente.",
+    "destaque": false
+  },
+  {
+    "id": "noticia-tekken8-matola",
+    "titulo": "Tekken 8 confirmado na grelha de desportos eletrónicos de Matola para Novembro",
+    "categoria": "Comunidade",
+    "autor": "Equipa JOGATINAL",
+    "data": "02 de Setembro de 2026",
+    "leituraMinutos": 4,
+    "resumo": "A comunidade de jogos de combate em Moçambique ganha um torneio oficial presencial em sistema Double Elimination na arena da Matola.",
+    "conteudo": "Após o sucesso dos torneios de futebol virtual, a JOGATINAL abre espaço para a comunidade de luta com o primeiro torneio oficial de Tekken 8 da província. Com um prize pool de 7.500 MT e vagas limitadas a 16 lutadores, o evento promete confrontos épicos entre os melhores jogadores de Maputo e Matola em ecrãs OLED profissionais de 120Hz.",
+    "destaque": false
+  }
+]
